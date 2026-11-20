@@ -38,3 +38,25 @@ Stellar aporta identificadores reproducibles, firmas en el dispositivo de la per
 **Qué es real:** contratos Soroban en testnet con pruebas, puertos definidos en `src/core/chain/`, ADR-005 y ADR-007 aceptados, documentación de campo anonimizada.  
 **Qué es demostración:** adaptadores simulados, catálogo con datos ficticios y respuestas de IA sin clave real.  
 **Qué está pendiente:** la implementación de #140 y las siguientes (#141, #142). Estado detallado en la tabla [“Qué es real y qué es simulado” del README](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/README.md#implementation-status).
+
+## Plan de trabajo y cronograma
+
+| Entregable | Qué se entrega | Cómo se verifica | Fecha | Responsable |
+| --- | --- | --- | --- | --- |
+| Especificación y manifiestos | `ATTESTATION_SPEC.md` y 5 JSON de esquema sin datos personales | Revisión cruzada con ADR-005/ADR-007 y `npm test` | 2026-11-24 | @DiegoSosa-05 |
+| Implementación y vectores | `ids.ts`, 6 vectores y `attestation_ids.test.ts` | `npm run lint`, `npm test`, `npm run build` | 2026-12-01 | @Felix-Angel |
+| Carta de entendimiento y cierre | Carta en `Estado: en consulta de asamblea` o firmada, y minuta de lectura | Revisión de otro equipo y del Product Owner | 2026-12-01 | @LuisAlexisMorales |
+
+Cada integrante hace al menos un commit; otro integrante revisa el PR con comentarios sustantivos.
+
+## Presupuesto y personal
+
+| Entregable | Horas | Tarifa por hora | Costo | Responsable |
+| --- | --- | --- | --- | --- |
+| Especificación y manifiestos | [HORAS_1] | [$TARIFA] MXN | [$COSTO_1] MXN | @DiegoSosa-05 |
+| Implementación y vectores | [HORAS_2] | [$TARIFA] MXN | [$COSTO_2] MXN | @Felix-Angel |
+| Carta, minuta y cierre | [HORAS_3] | [$TARIFA] MXN | [$COSTO_3] MXN | @LuisAlexisMorales |
+| Costo de calidad (Sprint 2): revisión y pruebas | [HORAS_CALIDAD] | [$TARIFA] MXN | [$COSTO_CALIDAD] MXN | @al3-dan |
+| **Total** | **[HORAS_TOTALES]** | — | **[$MONTO_TOTAL] MXN** | — |
+
+La suma de horas por integrante debe igualar `[HORAS_TOTALES]`; el total debe coincidir con el del resumen. La tarifa es de referencia académica y no implica cobro a la organización.
