@@ -67,3 +67,7 @@ El código de Yucu se distribuye bajo licencia **MIT**. Los diseños, recetas, f
 ## Consentimiento informado y firma
 
 La carta se leyó en lenguaje sencillo [Y_EN_SU_LENGUA_SI_APLICA], se dejó tiempo para consultarla en asamblea y se levantó minuta de esa sesión. La firma original y el documento que acredita la representación se guardan fuera del repositorio; aquí solo queda el estado y, cuando corresponda, la huella SHA-256 del PDF firmado.
+
+**Estado: borrador**
+
+Próxima fecha de asamblea: [FECHA_ASAMBLEA].
