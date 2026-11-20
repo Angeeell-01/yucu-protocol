@@ -28,3 +28,27 @@ En las sesiones de trabajo del Sprint 1 se registraron entrevistas anonimizadas 
 | Entregar la carta leída y con minuta de la sesión | 2026-12-01 | @LuisAlexisMorales |
 
 Estos compromisos se copian del cronograma de la propuesta final y no prometen más de lo que el equipo puede entregar.
+
+## Compromisos de la organización
+
+| Compromiso | Fecha | Responsable |
+| --- | --- | --- |
+| Disponer de [TIEMPO_DE_PRUEBA] para probar la demo de lectura de atestaciones | [FECHA_PRUEBA] | [ROL_DE_LA_ORGANIZACIÓN] |
+| Proporcionar la información pública necesaria (municipio y tipo de producto), sin datos personales | [FECHA_INFORMACION] | [ROL_DE_LA_ORGANIZACIÓN] |
+| Facilitar un espacio para la lectura de la carta y la asamblea | [FECHA_ASAMBLEA] | [ROL_DE_LA_ORGANIZACIÓN] |
+
+Todos los compromisos son **sin costo para la organización**. No se le pide dinero, equipo ni conexión permanente.
+
+## Alcance y exclusiones
+
+Queda escrito que este trabajo:
+
+- es **sin costo** y no genera cobro, comisión ni cuota;
+- **no garantiza ventas ni ingresos**;
+- **no otorga certificaciones**;
+- Yucu es un **prototipo** en la red de prueba de Stellar, no un servicio desplegado para uso público;
+- nadie de Yucu ni del equipo guarda las llaves ni el dinero de la organización; cada transacción se firma en el dispositivo de la persona correspondiente.
+
+## Datos personales
+
+Solo se usarán el rol de la persona (por ejemplo, “la presidenta del comité”) y el código de municipio, con el fin de explicar el origen del producto y probar la demo. No se pedirán nombres, teléfonos, CURP, números de control, fotos ni grabaciones. La información sensible se representa con un hash con sal y se guarda en la cadena como una dirección o un código, nunca como nombre. Se aplica el [aviso de privacidad](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/research/PRIVACIDAD.md) y se pide consentimiento libre e informado antes de cualquier entrevista; la persona puede negarse sin consecuencias.
