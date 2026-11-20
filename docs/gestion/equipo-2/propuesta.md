@@ -60,3 +60,25 @@ Cada integrante hace al menos un commit; otro integrante revisa el PR con coment
 | **Total** | **[HORAS_TOTALES]** | — | **[$MONTO_TOTAL] MXN** | — |
 
 La suma de horas por integrante debe igualar `[HORAS_TOTALES]`; el total debe coincidir con el del resumen. La tarifa es de referencia académica y no implica cobro a la organización.
+
+## Riesgos y viabilidad
+
+**Dictamen: Go condicionado** a que se confirmen el nombre legal de la organización, los responsables y el financiamiento real antes del PR. El costo se evalúa contra financiamiento académico y de la Ola de Stellar; no se promete venta ni ingreso.
+
+| Si… | entonces… | Probabilidad | Impacto | Respuesta | Responsable |
+| --- | --- | --- | --- | --- | --- |
+| Si la organización no puede reunirse antes del 2026-11-30, entonces enviamos la carta en consulta con minuta y fecha de la próxima asamblea. | Media | Medio | Lectura en lenguaje sencillo y nota de voz de un minuto | @LuisAlexisMorales |
+| Si no hay señal en la comunidad, entonces llevamos la demo y el informe impresos y conservamos la nota de voz local. | Alta | Bajo | Descarga previa y copia impresa de una página | @al3-dan |
+| Si cambia una versión de Attest Protocol, entonces actualizamos el formato `value` y los vectores antes de la Feria. | Media | Alto | Seguimiento de ADR-005 y prueba de regresión | @Felix-Angel |
+
+## Evidencia y siguientes pasos
+
+- Bitácora de entrevistas anonimizada: [Hito 1.3](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/ux-testing/HITO_1.3_VALIDACION_COMPRADORES.md) y [reporte de 6 perfiles](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/ux-testing/buyer-validation-report.md).
+- Especificación de la issue: [#140](https://github.com/Open-Hub-Tec/yucu-protocol/issues/140) y decisiones [ADR-005](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/adr/ADR-005-INFRAESTRUCTURA-DE-ATESTACIONES.md) y [ADR-007](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/adr/ADR-007-MOTOR-DE-ATESTACIONES-POR-VOZ.md).
+- Repositorio: https://github.com/Open-Hub-Tec/yucu-protocol.
+- Carta de entendimiento: **pendiente de aprobación**. Estado documentado en `docs/gestion/equipo-2/carta.md`.
+- Siguientes pasos: 2026-11-24 revisión de la especificación con otro equipo; 2026-12-01 entrega en la Feria de Integración y pase de #140 a #141.
+
+### Ética y datos personales
+
+Se aplica [PRIVACIDAD.md](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/research/PRIVACIDAD.md): solo roles y municipios, sin nombres, voces, fotos, teléfonos ni números de control. No se prometen ventas, ingresos ni certificaciones; Yucu es un prototipo en testnet y nadie custodia llaves o dinero de la organización.
