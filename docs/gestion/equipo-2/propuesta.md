@@ -2,7 +2,7 @@
 
 **Módulo:** [#140 · Attestation specification with test vectors](https://github.com/Open-Hub-Tec/yucu-protocol/issues/140)  
 **Sub-issue:** [#209](https://github.com/Open-Hub-Tec/yucu-protocol/issues/209) · **Entrega:** 2026-11-16  
-**Organización:** [NOMBRE_LEGAL_DE_LA_ORGANIZACIÓN] · **eduScrum Master:** @usuario-por-asignar
+**Organización:** Unión de Productores de Miel de San Juan Ñumí, Oaxaca · **eduScrum Master:** @LuisAlexisMorales
 
 > **Estado del borrador:** los campos entre corchetes se sustituyen con los datos reales antes de abrir el PR. Los integrantes aparecen solo con su `@usuario`; no se publican nombres de personas de la comunidad.
 
