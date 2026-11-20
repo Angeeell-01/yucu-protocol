@@ -81,12 +81,12 @@
 | # | Entregable | Cómo se verifica | Fecha | Responsable | Horas |
 |---|---|---|---|---|---|
 | E1 | `sha256()` con WebCrypto y error si no existe | Pruebas con los vectores oficiales de `""` y `"abc"`; prueba negativa sin WebCrypto | 2026-11-24 | @AlexViva-0 | 8 |
-| E2 | `sha256Hex()` eliminado y sus 5 usos migrados con `source: 'simulated'` | `git grep sha256Hex` sin resultados; `npm test` pasa | 2026-11-25 | @IsaiasBrayanLopez | 8 |
+| E2 | `sha256Hex()` eliminado y sus 5 usos migrados con `source: 'simulated'` | 5 usos migrados a `sha256()` asíncrono (4 en `RaizAIOracles.ts` y 1 en `RaizProtocolSDK.ts`); `git grep sha256Hex` con 0 coincidencias; `npm test` pasa | 2026-11-25 | @IsaiasBrayanLopez | 8 |
 | E3 | Foto limpia (sin GPS) y huella sobre sus bytes completos | Prueba: cambiar un byte al final cambia la huella; una foto con GPS sale sin GPS | 2026-11-26 | @Jazlynn22 | 8 |
 | E4 | Huella del lote con JSON canónico, sin nombres | Prueba: el mismo lote con llaves en otro orden da la misma huella | 2026-11-27 | @AlexViva-0 | 6 |
-| E5 | Pruebas viejas actualizadas y verificación completa | `complete_system_audit` y `dynamic_process` sin `producerName`; `lint`, `test` y `build` pasan en CI | 2026-11-28 | @IsaiasBrayanLopez | 4 |
+| E5 | Pruebas viejas actualizadas y verificación completa | `complete_system_audit.test.ts` y `dynamic_process.test.ts` actualizadas sin campos `producerName` ni `community` en la firma; `npm run lint`, `npm test` y `npm run build` pasan en verde en CI | 2026-11-28 | @IsaiasBrayanLopez | 4 |
 | E6 | Calidad: revisión cruzada del PR y correcciones | Cada integrante revisa un PR de otro con comentarios reales; PR aprobado | 2026-11-30 | @Jazlynn22 | 6 |
-| E7 | Demostración en la Feria de Integración | Demo en vivo: cambiar un byte de la foto cambia la huella; cada integrante explica su parte | 2026-12-01 | @IsaiasBrayanLopez | 4 |
+| E7 | Demostración en la Feria de Integración | Demostración técnica en vivo: (1) vectores oficiales en consola, (2) efecto avalancha al cambiar 1 byte de la foto, (3) comprobación de foto limpia de EXIF/GPS; cada integrante expone su parte | 2026-12-01 | @IsaiasBrayanLopez | 4 |
 
 ```mermaid
 gantt
@@ -128,20 +128,25 @@ El costo de la calidad sigue las categorías del Plan de Calidad del Sprint 2: *
 | Integrante | Rol | Entregables | Horas |
 |---|---|---|---:|
 | @AlexViva-0 | Desarrollo | E1, E4 | 14 |
-| @IsaiasBrayanLopez | eduScrum Master, desarrollo y demostración | E2, E5, E7 | 16 |
+| @IsaiasBrayanLopez | eduScrum Master, migración criptográfica y facilitador de demo | E2, E5, E7 | 16 |
 | @Jazlynn22 | Desarrollo y calidad | E3, E6 | 14 |
 | **Total** | | | **44** |
 
 ## 7. Riesgos y viabilidad
 
-**Dictamen: Go condicionado.** El costo de referencia ($6,600 MXN) es tiempo de clase del equipo, no dinero: no necesita financiamiento externo y la organización no paga nada, así que el financiamiento realista (cero pesos) alcanza. El módulo no agrega dependencias y WebCrypto ya está disponible. La condición es que el Product Owner confirme que el módulo del equipo es #120 y que se asigne la issue al equipo antes del 23 de noviembre.
+**Dictamen: Go condicionado.**
+- **Viabilidad económica y financiera:** El costo estimado de $6,600 MXN (44 horas a $150 MXN/h) corresponde al valor de referencia del tiempo de desarrollo académico del equipo. No requiere financiamiento externo y la organización comunitaria Yosondua no absorbe costo alguno; el financiamiento realista disponible ($0 MXN de capital monetario, 100% cubierto por horas de clase y laboratorio) es completamente suficiente.
+- **Viabilidad técnica:** El alcance es viable en una semana ya que `crypto.subtle` es nativo en navegadores modernos y Node 22, no requiere paquetes externos adicionales y respeta los principios no custodiales y de privacidad de `AGENTS.md`.
+- **Condiciones para pasar a Go definitivo:**
+  1. Que el Product Owner confirme la aclaración entre #199/#121 y asigne formalmente la issue #120 al Equipo 3 antes del 23 de noviembre.
+  2. Que la revisión cruzada de pares en el PR #339 resulte aprobada sin observaciones bloqueantes.
 
 | # | Riesgo (si… entonces…) | Probabilidad | Impacto | Respuesta | Dueño |
 |---|---|---|---|---|---|
 | R1 | Si un teléfono viejo de la organización no tiene WebCrypto, entonces la app no podrá calcular la huella en ese teléfono. | Baja | Alto | Mitigar: la función lanza un error claro y la app avisa que no se puede registrar el lote; nunca devuelve una huella falsa. Se prueba en un teléfono de gama baja. | @AlexViva-0 |
 | R2 | Si quitar `sha256Hex()` rompe pruebas de `RaizAIOracles` o del SDK, entonces el PR no pasa CI y se retrasa E2. | Media | Medio | Mitigar: migrar un uso a la vez con `npm test` después de cada cambio; reservar 2 horas de E6. | @IsaiasBrayanLopez |
 | R3 | Si redibujar la foto en `canvas` da bytes distintos en cada navegador, entonces la prueba de "misma foto, misma huella" puede fallar. | Media | Medio | Aceptar y documentar: la huella se calcula una sola vez sobre la foto ya limpia y esa foto limpia es la que se guarda; la prueba usa los mismos bytes. | @Jazlynn22 |
-| R4 | Si un integrante no puede trabajar en la semana del 23 de noviembre, entonces su entregable no llega a tiempo a la Feria. | Media | Alto | Transferir: el eduScrum Master reasigna el entregable en el daily y se avisa al Product Owner con 2 días de anticipación. | @IsaiasBrayanLopez |
+| R4 | Si un integrante presenta indisponibilidad en la semana del 23 de noviembre, entonces se compromete la ruta crítica hacia la Feria. | Media | Alto | Mitigar: el eduScrum Master reasigna las tareas críticas en el daily hacia los integrantes disponibles, priorizando E1/E3/E5, y notifica al Product Owner de inmediato en el standup sin demoras. | @IsaiasBrayanLopez |
 
 ## 8. Evidencia y siguientes pasos
 
@@ -160,8 +165,8 @@ El costo de la calidad sigue las categorías del Plan de Calidad del Sprint 2: *
 
 | Paso | Fecha | Responsable |
 |---|---|---|
-| Pedir la asignación de #120 al Product Owner | 2026-11-21 | @IsaiasBrayanLopez |
-| Revisión cruzada de esta propuesta por el equipo revisor asignado | 2026-11-22 | @IsaiasBrayanLopez |
+| Solicitar formalmente en GitHub la asignación de #120 al Product Owner aclarando la discrepancia con #199 | 2026-11-21 | @IsaiasBrayanLopez |
+| Coordinar con el equipo asignado la revisión cruzada de esta propuesta en el PR #339 y atender observaciones | 2026-11-22 | @IsaiasBrayanLopez |
 | Iniciar E1 en la rama `feat/issue-120-sha256-real` | 2026-11-23 | @AlexViva-0 |
 | Informe de avance a la organización (plan de #213) | 2026-11-27 | @Jazlynn22 |
 | Demostración en la Feria de Integración | 2026-12-01 | Todo el equipo |
