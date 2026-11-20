@@ -69,7 +69,7 @@ Las partes dejan por escrito que:
 
 ## 8. Comunicación, vigencia y terminación
 
-- **Contactos:** por la organización, la presidenta del comité; por el equipo, el eduScrum Master (<!-- TODO: @usuario del eduScrum Master -->). Los datos de contacto no se publican aquí.
+- **Contactos:** por la organización, la presidenta del comité; por el equipo, el eduScrum Master (@nallely-lopez). Los datos de contacto no se publican aquí.
 - **Vigencia:** del 2026-11-24 al 2026-12-15. Dura dos semanas más que la feria para que la asamblea tenga tiempo de consultar la carta y el equipo le entregue los resultados finales. <!-- PROPUESTA: ajustar si la organización prefiere otras fechas -->
 - **Terminación:** cualquiera de las partes puede terminar esta carta en cualquier momento con un aviso por escrito (puede ser un mensaje), sin costo ni penalización.
 - **Diferencias:** se resuelven platicando y, si hace falta, en asamblea de la organización.

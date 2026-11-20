@@ -2,7 +2,7 @@
 
 **Módulo:** cobro en pesos desde la cuenta de la artesana: puerto `PayoutPort` ([#112](https://github.com/Open-Hub-Tec/yucu-protocol/issues/112), ya fusionado en el PR [#239](https://github.com/Open-Hub-Tec/yucu-protocol/pull/239)) y su flujo en pantalla "Ya estoy en la tienda" ([#114](https://github.com/Open-Hub-Tec/yucu-protocol/issues/114)).
 **Organización:** Colectivo de Artesanas Textiles de la Mixteca Alta `[DATOS DE EJEMPLO / SIMULADOS]`
-**Equipo (4 integrantes):** @nallely-lopez, @Ab396, @LeninBautistaaa, @Dani0GO <!-- TODO: indicar quién es el eduScrum Master -->
+**Equipo (4 integrantes):** @nallely-lopez (eduScrum Master), @Ab396, @LeninBautistaaa, @Dani0GO
 **Issue:** [#197](https://github.com/Open-Hub-Tec/yucu-protocol/issues/197) · Sub-issue [#206](https://github.com/Open-Hub-Tec/yucu-protocol/issues/206)
 
 > **Aviso de datos de ejemplo (simulados).** Lo marcado `[DATOS DE EJEMPLO / SIMULADOS]` son datos de referencia que autorizó el docente: en los Sprints 1 a 3 el equipo trabajó un caso distinto y todavía no hay validación en campo con una organización productora. No hay nombres reales, teléfonos ni documentos privados ([PRIVACIDAD.md](../../research/PRIVACIDAD.md)).
