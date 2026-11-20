@@ -52,3 +52,18 @@ Queda escrito que este trabajo:
 ## Datos personales
 
 Solo se usarán el rol de la persona (por ejemplo, “la presidenta del comité”) y el código de municipio, con el fin de explicar el origen del producto y probar la demo. No se pedirán nombres, teléfonos, CURP, números de control, fotos ni grabaciones. La información sensible se representa con un hash con sal y se guarda en la cadena como una dirección o un código, nunca como nombre. Se aplica el [aviso de privacidad](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/research/PRIVACIDAD.md) y se pide consentimiento libre e informado antes de cualquier entrevista; la persona puede negarse sin consecuencias.
+
+## Propiedad intelectual e imagen
+
+El código de Yucu se distribuye bajo licencia **MIT**. Los diseños, recetas, fotografías y conocimientos tradicionales siguen siendo propiedad de la organización. El nombre y las imágenes de la organización solo se usarán para mencionar su participación en el prototipo y en la Feria de Integración, previa autorización; no se usarán con fines comerciales ni para sugerir respaldo a productos externos.
+
+## Comunicación, vigencia y terminación
+
+- **Contacto del equipo:** @LuisAlexisMorales. **Contacto de la organización:** [ROL_DE_LA_ORGANIZACIÓN].
+- **Vigencia:** del 2026-11-20 al 2027-06-30.
+- **Terminación:** cualquiera de las partes puede darla por terminada con aviso por escrito con [DIAS_DE_AVISO] días naturales de anticipación.
+- **Diferencias:** se resuelven primero con diálogo y, si hace falta, en asamblea, con minuta de los acuerdos.
+
+## Consentimiento informado y firma
+
+La carta se leyó en lenguaje sencillo [Y_EN_SU_LENGUA_SI_APLICA], se dejó tiempo para consultarla en asamblea y se levantó minuta de esa sesión. La firma original y el documento que acredita la representación se guardan fuera del repositorio; aquí solo queda el estado y, cuando corresponda, la huella SHA-256 del PDF firmado.
