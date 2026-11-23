@@ -139,7 +139,7 @@ El costo de la calidad sigue las categorías del Plan de Calidad del Sprint 2: *
 - **Viabilidad técnica:** El alcance es viable en una semana ya que `crypto.subtle` es nativo en navegadores modernos y Node 22, no requiere paquetes externos adicionales y respeta los principios no custodiales y de privacidad de `AGENTS.md`.
 - **Condiciones para pasar a Go definitivo:**
   1. Que el Product Owner confirme la aclaración entre #199/#121 y asigne formalmente la issue #120 al Equipo 3 antes del 23 de noviembre.
-  2. Que la revisión cruzada de pares en el PR #339 resulte aprobada sin observaciones bloqueantes.
+  2. Que la revisión cruzada de pares en el PR #340 resulte aprobada sin observaciones bloqueantes.
 
 | # | Riesgo (si… entonces…) | Probabilidad | Impacto | Respuesta | Dueño |
 |---|---|---|---|---|---|
@@ -175,5 +175,5 @@ El costo de la calidad sigue las categorías del Plan de Calidad del Sprint 2: *
 ### Ética y datos personales
 
 - Este documento sigue el aviso de privacidad del proyecto: [`docs/research/PRIVACIDAD.md`](../../research/PRIVACIDAD.md). No incluye nombres, voces, fotos, teléfonos ni números de control de nadie de la comunidad; los integrantes aparecen solo con su `@usuario`.
-- El módulo mejora la privacidad: la huella ya no incluye nombres ni comunidad, y la foto pierde la ubicación GPS antes de calcularla.
+- El módulo mejora la privacidad: la huella ya no incluye nombres ni comunidad (hecho en el PR #341) y, cuando termine E3, la foto perderá la ubicación GPS antes de calcular la huella.
 - Yucu es un prototipo en Stellar testnet. Esta propuesta no promete ventas, ingresos ni certificaciones a la organización.
