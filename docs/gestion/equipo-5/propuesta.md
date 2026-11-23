@@ -106,7 +106,7 @@ Ahora:  IA ──► "SUGGESTED" / "NEEDS_REVIEW" + source: 'simulated'
 ```
 
 1. **Lógica:** un tipo de estado nuevo (`'SUGGESTED' | 'NEEDS_REVIEW' | 'NOT_AVAILABLE'`) en lugar de `'CERTIFIED'`.
-2. **Interfaz:** "Certificar calidad" → "Sugerir calidad (la confirma una persona)"; "Oráculos autónomos" → "Asistentes de IA (sugieren; una persona firma)".
+2. **"Oráculos autónomos" → "Asistentes de IA (sugieren; una persona firma)"; "Digest de Certificación" → "Resumen de sugerencias (falta la firma de una persona)"..
 3. **SDK:** la opinión de la IA se describe como opinión; el emisor de una atestación es siempre una persona.
 4. **Pruebas:** cada resultado simulado sale con `source: 'simulated'`, y nunca con otra fuente.
 
