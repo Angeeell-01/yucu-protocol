@@ -30,15 +30,15 @@ Copiados del cronograma de la Propuesta Final. El equipo no promete nada que no 
 
 ## 4. Compromisos de la organización
 
-Todos sin costo para la organización y solo si la asamblea está de acuerdo:
+Todos estos puntos son totalmente gratuitos, voluntarios y solo se llevarán a cabo si la asamblea o mesa directiva así lo autorizan:
 
-| Compromiso | Fecha | Quién |
+| Compromiso sencillo | Fecha propuesta | Quién participa |
 |---|---|---|
-| Dar un espacio y unos 45 minutos para la lectura de esta carta | 2026-11-26 | Persona que designe la organización |
-| Llevar la carta a consulta de la asamblea y decir si está de acuerdo, si quiere cambios o si no desea firmar | Antes del 2026-12-01 | Asamblea o mesa directiva |
-| Dar unos 30 minutos para ver la demostración y decir qué entendió y qué le preocupa | 2026-11-28 | Integrantes que quieran participar |
+| Brindar un espacio tranquilo y aproximadamente 45 minutos para escuchar la lectura de esta carta en voz alta | 2026-11-26 | La persona o comisión que la organización designe |
+| Dialogar y consultar el contenido de la carta en su asamblea o reunión comunitaria, con total libertad de pedir cambios, aprobarla o decidir no firmarla | Antes del 2026-12-01 | La asamblea comunitaria o mesa directiva |
+| Dedicar unos 30 minutos para presenciar cómo funciona la aplicación de prueba con datos ficticios, y compartir libremente sus dudas o sugerencias | 2026-11-28 | Las y los integrantes que gusten acompañarnos |
 
-La organización puede decir que no a cualquiera de estos puntos sin ninguna consecuencia.
+> **Aclaración importante:** La organización tiene la libertad absoluta de decir que no a cualquiera de estas actividades en cualquier momento, sin costo, penalización ni consecuencia alguna.
 
 ## 5. Alcance y exclusiones
 
@@ -50,13 +50,15 @@ Las partes dejan por escrito que:
 - **Yucu es un prototipo** en la red de pruebas (testnet) de Stellar. No maneja dinero real.
 - **Nadie guarda las llaves ni el dinero de la organización**: ni el equipo, ni el TecNM, ni Yucu ([ADR-003](../../adr/ADR-003-NO-CUSTODIAL-Y-TRUSTLESS-WORK.md)).
 
-## 6. Datos personales
+## 6. Datos personales y cuidado de su información
 
-- **Qué datos:** ninguno de forma obligatoria. Para la demostración se usan datos inventados. Si la organización comparte opiniones, se anotan sin nombres, solo por cargo o rol.
-- **Para qué:** para mejorar Yucu y para el informe escolar del equipo.
-- **Con quién se comparten:** con el docente (Product Owner) y, en el repositorio público, solo el texto sin nombres, voces, fotos de personas, teléfonos ni direcciones.
-- **Aviso de privacidad:** se sigue el aviso de privacidad del proyecto, [`PRIVACIDAD.md`](../../research/PRIVACIDAD.md). No se publica nombre, voz ni imagen sin un consentimiento por escrito que lo diga expresamente.
-- **Consentimiento libre e informado:** participar es voluntario y la organización puede retirarse cuando quiera, sin dar explicaciones.
+Explicamos de forma clara y transparente cómo cuidamos su privacidad:
+
+- **¿Qué datos solicitamos?** Ninguno de forma obligatoria. Para la demostración se usan datos inventados (nombres y kilos ficticios). Si alguien comparte comentarios o dudas, se registran únicamente por su cargo o rol comunitario (por ejemplo: «artesana de telar» o «integrante del comité»), jamás por su nombre propio ni apellidos.
+- **¿Para qué se usan?** Exclusivamente para aprender, mejorar la aplicación y presentar los trabajos escolares de la materia en el Tecnológico.
+- **¿Con quién se comparten?** Únicamente con el profesor de la materia. En la plataforma pública de internet no se publica ningún nombre personal, número de teléfono, domicilio, foto de personas ni grabaciones de voz.
+- **Protección de la privacidad:** Nos apegamos estrictamente al documento de privacidad del proyecto ([`PRIVACIDAD.md`](../../research/PRIVACIDAD.md)). No se difundirá en internet la voz, rostro ni nombre de nadie sin un permiso formal y por escrito.
+- **Libertad total:** Su participación es voluntaria. La organización o cualquiera de sus integrantes puede retirarse cuando lo desee, sin tener que dar explicaciones ni recibir sanción alguna.
 
 ## 7. Propiedad intelectual e imagen
 
