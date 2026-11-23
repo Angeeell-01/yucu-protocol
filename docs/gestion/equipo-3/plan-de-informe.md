@@ -69,4 +69,7 @@ La versión para la organización es la misma información en palabras sencillas
 | **Nota de voz** de un minuto | Informe para la organización | No requiere leer; se manda por WhatsApp cuando hay señal o se reproduce en persona |
 | **Hoja impresa** | Informe y carta para la organización | Llega aunque no haya señal; se queda con la organización para su asamblea; cuesta unos pesos de impresión que paga el equipo |
 
-**Adaptado a la comunidad:** el informe para Yosondua va en lenguaje sencillo, cabe en una página o en un minuto de voz, se entrega en el horario que la organización indique y, si hace falta, se lee en su lengua con apoyo de quien ella elija. Como en la comunidad puede no haber señal o conexión a internet, la versión impresa siempre se entrega en persona.
+**Adaptado a la comunidad (a cargo de @Jazlynn22):**
+- **Formato impreso:** El informe para Yosondua se redacta en lenguaje sencillo, directo y sin tecnicismos, en media página con letra grande y clara. Se entrega de forma física y en persona para que quede en resguardo de la organización y se pueda consultar en asamblea comunitaria, sin depender de cobertura o internet.
+- **Nota de voz de un minuto:** @Jazlynn22 prepara el texto con una extensión de 100 a 120 palabras (aproximadamente 50 a 60 segundos a ritmo pausado y claro). Se comparte por mensajería instantánea cuando haya cobertura o se reproduce en persona durante las visitas. Por apego estricto a [`PRIVACIDAD.md`](../../research/PRIVACIDAD.md), únicamente se publica el texto del guion en el repositorio, jamás archivos de audio.
+- **Respeto a horarios y lengua:** Se entrega en el horario que la organización señale y, si es necesario, se lee o traduce a su lengua con el apoyo de la persona que la comunidad designe.

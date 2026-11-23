@@ -16,7 +16,7 @@
 
 | Entregable | Planeado | Estado al corte | Evidencia |
 |---|---|---|---|
-| #212 Propuesta Final | 2026-11-16 | PR abierto; validador ✅; falta aprobación de un integrante | [PR #340](https://github.com/Open-Hub-Tec/yucu-protocol/pull/340) |
+| #212 Propuesta Final | 2026-11-16 | PR abierto; validador ✅; aprobado por @Jazlynn22 | [PR #340](https://github.com/Open-Hub-Tec/yucu-protocol/pull/340) |
 | #213 Plan de informe | 2026-11-17 | Este PR | [#213](https://github.com/Open-Hub-Tec/yucu-protocol/issues/213) |
 | #214 Carta (borrador) | 2026-11-17 | Borrador en PR aparte | [#214](https://github.com/Open-Hub-Tec/yucu-protocol/issues/214) |
 | E1, E2, E4 y E5 del módulo #120 | 2026-11-24 a 2026-11-28 | ✅ Terminados: fusionado el 2026-11-23 | [PR #341](https://github.com/Open-Hub-Tec/yucu-protocol/pull/341) |
@@ -41,7 +41,7 @@ Datos tomados de las issues y PR con la etiqueta `equipo-3` y del PR #341 el 202
 
 | Paso | Fecha | Responsable |
 |---|---|---|
-| Aprobar y fusionar la Propuesta (PR #340) | 2026-11-24 | @Jazlynn22 |
+| Fusionar la Propuesta (PR #340 ya aprobado por @Jazlynn22) | 2026-11-24 | @IsaiasBrayanLopez |
 | Terminar E3: quitar GPS y metadatos de la foto antes de la huella, con prueba | 2026-11-26 | @Jazlynn22 |
 | Revisión cruzada del borrador de la carta por otro equipo | 2026-11-25 | @AlexViva-0 |
 | Lectura de la carta a Yosondua y entrega de este informe impreso | 2026-11-26 | @IsaiasBrayanLopez |
@@ -51,7 +51,7 @@ Datos tomados de las issues y PR con la etiqueta `equipo-3` y del PR #341 el 202
 ## Bloqueos
 
 - Los tres entregables de gestión se atrasaron mientras el equipo terminaba el código de #120.
-- Falta la aprobación de un integrante en el PR #340.
+- PR #340 revisado y aprobado formalmente por @Jazlynn22; pendiente su fusión.
 - Falta confirmar con Yosondua la fecha de lectura de la carta.
 
 ## Decisiones que pedimos
