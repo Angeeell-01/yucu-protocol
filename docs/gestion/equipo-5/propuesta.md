@@ -230,7 +230,7 @@ Escala de 1 a 5; nivel = probabilidad × impacto (alto ≥ 12).
 |---|---|---|---:|---:|---:|---|---|
 | R1 | Si el equipo no puede explicar su código en la revisión | entonces el PR no se fusiona, aunque funcione | 3 | 5 | **15 · Alto** | Cada quien explica su parte en la reunión del 30 de noviembre antes de la feria; las pruebas se escriben primero (P) | @DaisyOrtiz2 |
 | R2 | Si la carga de fin de semestre de otras materias nos quita horas | entonces no llegamos al 11 de diciembre | 4 | 3 | **12 · Alto** | Priorizar D1, D3 y D5 antes de la feria; D2 y D4 después. Se usa la reserva de 5 h | @DaisyOrtiz2 |
-| R3 | Si otro equipo cambia los mismos archivos (#108, #106) | entonces aparecen conflictos al unir | 3 | 3 | 9 · Medio | Comentar en #108 y #106 qué archivos tocamos; actualizar la rama cada dos días | @DiegoLV117 |
+| R3 | Si otro equipo cambia los mismos archivos (#108, #106) | entonces aparecen conflictos al unir | 3 | 3 | 9 · Medio | Comentar en #108 y #106 que tocamos YucuAgentSwarm.ts, RaizAIOracles.ts y RaizProtocolSDK.ts; actualizar la rama cada dos días | @DiegoLV117 |
 | R4 | Si cambiamos `CERTIFIED` y se rompen pruebas viejas | entonces Actions marca ❌ | 3 | 3 | 9 · Medio | Actualizar primero las dos pruebas existentes (D5) | @elisa1223 |
 | R5 | Si un texto nuevo vuelve a sonar a "certificado" | entonces se repite el problema | 2 | 4 | 8 · Medio | Revisar los textos con la lista de palabras prohibidas de #168 | @Yare-mon |
 
