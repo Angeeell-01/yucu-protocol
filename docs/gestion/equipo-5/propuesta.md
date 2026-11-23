@@ -73,7 +73,7 @@ Si una persona compradora lee "certificado por IA", cree que alguien respondió 
 | **R** · Relevante | Cumple la arquitectura v2 y el acuerdo del Comité: la IA propone, la persona decide. |
 | **T** · Temporal | Demo el 1 de diciembre y PR listo para fusionar el 11 de diciembre. |
 
-### Qué incluye
+### Objetivo: qué incluye
 
 - Estados de sugerencia y `source: 'simulated'` en `YucuAgentSwarm.ts` y `RaizAIOracles.ts`.
 - Emisor del SDK que nunca es un "oráculo de IA".
@@ -81,7 +81,9 @@ Si una persona compradora lee "certificado por IA", cree que alguien respondió 
 - Scripts del *pitch deck* con Attest Protocol + índice Yucu.
 - Pruebas actualizadas y nuevas (positiva y negativa).
 
-### Qué no incluye
+### Objetivo: qué no incluye (fuera del alcance)
+
+El módulo **no incluye** lo siguiente (queda fuera del alcance de #168):
 
 - Borrar los oráculos o el modal.
 - Conectar una IA real (eso es #154, la siguiente issue del equipo).
@@ -133,16 +135,16 @@ Capacidad del equipo (la misma receta del Sprint 3): 4 personas × 5 h × 75 % =
 
 | ID | Entregable | Cómo se verifica | Fecha | Responsable |
 |---|---|---|---|---|
-| P | Prevención: leer `AGENTS.md`, ADR-003, ADR-005 y ADR-007; escribir primero los casos de prueba | Lista de casos en el PR y revisión de otra integrante | 24 nov | @elisa1223 · @DaisyOrtiz2 |
-| D1 | Estados de sugerencia y `source: 'simulated'` en `YucuAgentSwarm.ts` y `RaizAIOracles.ts` | `grep -rn "CERTIFIED" src/` sin resultados de IA | 27 nov | @DiegoLV117 |
-| D3 | Textos del modal en español claro y `<DemoBadge />` | Capturas antes y después en el PR; no aparecen "certificar", "certificación" ni "autónomo" | 28 nov | @Yare-mon |
-| D5 | Pruebas actualizadas, más una positiva y una negativa | `npm test` en verde en GitHub Actions | 29 nov | @elisa1223 |
-| D6 | Demostración en la Feria de Integración | Demo en vivo del modal con los textos nuevos | **1 dic** | @DaisyOrtiz2 |
-| D2 | Emisor del SDK sin oráculo de IA | Revisión del código; `npm run build` en verde | 4 dic | @DiegoLV117 |
-| D4 | Scripts del *pitch deck* con Attest Protocol + índice Yucu | Revisión de las diapositivas generadas | 5 dic | @Yare-mon |
-| C | Corrección: atender comentarios de la revisión y de Actions | Todos los comentarios resueltos | 9 dic | @DiegoLV117 · @DaisyOrtiz2 |
-| R | Reserva por riesgos (sección 7) | Se usa solo si un riesgo ocurre; se registra en el tablero | hasta 11 dic | Equipo (la administra @DaisyOrtiz2) |
-| — | PR listo para fusionar con `Resolves #168` | lint, test y build en verde; revisión aprobada | **11 dic** | @DaisyOrtiz2 |
+| P | Prevención: leer `AGENTS.md`, ADR-003, ADR-005 y ADR-007; escribir primero los casos de prueba | Lista de casos en el PR y revisión de otra integrante | 24 de noviembre | @elisa1223 · @DaisyOrtiz2 |
+| D1 | Estados de sugerencia y `source: 'simulated'` en `YucuAgentSwarm.ts` y `RaizAIOracles.ts` | `grep -rn "CERTIFIED" src/` sin resultados de IA | 27 de noviembre | @DiegoLV117 |
+| D3 | Textos del modal en español claro y `<DemoBadge />` | Capturas antes y después en el PR; no aparecen "certificar", "certificación" ni "autónomo" | 28 de noviembre | @Yare-mon |
+| D5 | Pruebas actualizadas, más una positiva y una negativa | `npm test` en verde en GitHub Actions | 29 de noviembre | @elisa1223 |
+| D6 | Demostración en la Feria de Integración | Demo en vivo del modal con los textos nuevos | **1 de diciembre** | @DaisyOrtiz2 |
+| D2 | Emisor del SDK sin oráculo de IA | Revisión del código; `npm run build` en verde | 4 de diciembre | @DiegoLV117 |
+| D4 | Scripts del *pitch deck* con Attest Protocol + índice Yucu | Revisión de las diapositivas generadas | 5 de diciembre | @Yare-mon |
+| C | Corrección: atender comentarios de la revisión y de Actions | Todos los comentarios resueltos | 9 de diciembre | @DiegoLV117 · @DaisyOrtiz2 |
+| R | Reserva por riesgos (sección 7) | Se usa solo si un riesgo ocurre; se registra en el tablero | hasta el 11 de diciembre | Equipo (la administra @DaisyOrtiz2) |
+| — | PR listo para fusionar con `Resolves #168` | lint, test y build en verde; revisión aprobada | **11 de diciembre** | @DaisyOrtiz2 |
 
 ```mermaid
 gantt
@@ -167,7 +169,7 @@ gantt
 
 ## Presupuesto y personal
 
-### Paso 1: horas por entregable (estimación de tres puntos)
+### Presupuesto · Paso 1: horas por entregable (estimación de tres puntos)
 
 Construir = (Bien + Normal × 4 + Falla) ÷ 6, redondeado.
 
@@ -181,7 +183,7 @@ Construir = (Bien + Normal × 4 + Falla) ÷ 6, redondeado.
 | D6 · Demo en la feria | 2 | 3 | 5 | (2 + 12 + 5) ÷ 6 = **3 h** |
 | **Construir** | | | | **24 h** |
 
-### Costo de la calidad (continuación del Sprint 2)
+### Presupuesto · Costo de la calidad (continuación del Sprint 2)
 
 En el Sprint 2 el costo de la calidad del proyecto fue **$12,150** (30 h de prevención, 17 h de evaluación y 34 h de corrección, con j = 0.88). Aprendimos que corregir sale más caro que prevenir, así que este módulo planea **más prevención que corrección**, igual que HU-01 (la única con j = 1.33):
 
@@ -193,18 +195,18 @@ En el Sprint 2 el costo de la calidad del proyecto fue **$12,150** (30 h de prev
 | **Costo de la calidad del módulo** | **12 h** | **$1,800** |
 | **j = prevención ÷ corrección** | 4 ÷ 3 | **1.33 ≥ 1.00** |
 
-### Pasos 2 a 4: reserva, tiempo y costo
+### Presupuesto · Pasos 2 a 4: reserva, tiempo y costo
 
 | Paso | Cálculo | Resultado |
 |---|---|---|
 | Horas | 24 construir + 4 prevenir + 3 corregir | **31 h** |
 | Reserva (2 riesgos altos → 15 %) | 31 × 15 % = 4.65 ≈ 5 h | **36 h** |
-| Tiempo | 36 h ÷ 15 h por semana | **2.4 semanas** (23 nov – 11 dic) |
+| Tiempo | 36 h ÷ 15 h por semana | **2.4 semanas** (23 de noviembre – 11 de diciembre) |
 | Trabajo | 36 h × $150 | $5,400 |
 | Gastos | 1 visita al Comité para leer la carta (#220): 4 × $50 de pasaje + $100 de datos | $300 |
 | **Costo total** | $5,400 + $300 | **$5,700 MXN** (≈ 308 USD a $18.50) |
 
-### Personal: horas por integrante
+### Presupuesto · Personal: horas por integrante
 
 | Integrante | Rol | Entregables | Horas base | Reserva | Total |
 |---|---|---|---:|---:|---:|
@@ -226,7 +228,7 @@ Escala de 1 a 5; nivel = probabilidad × impacto (alto ≥ 12).
 
 | ID | Si… | Entonces… | P | I | Nivel | Respuesta | Dueño |
 |---|---|---|---:|---:|---:|---|---|
-| R1 | Si el equipo no puede explicar su código en la revisión | entonces el PR no se fusiona, aunque funcione | 3 | 5 | **15 · Alto** | Cada quien explica su parte en la reunión del 30 nov antes de la feria; las pruebas se escriben primero (P) | @DaisyOrtiz2 |
+| R1 | Si el equipo no puede explicar su código en la revisión | entonces el PR no se fusiona, aunque funcione | 3 | 5 | **15 · Alto** | Cada quien explica su parte en la reunión del 30 de noviembre antes de la feria; las pruebas se escriben primero (P) | @DaisyOrtiz2 |
 | R2 | Si la carga de fin de semestre de otras materias nos quita horas | entonces no llegamos al 11 de diciembre | 4 | 3 | **12 · Alto** | Priorizar D1, D3 y D5 antes de la feria; D2 y D4 después. Se usa la reserva de 5 h | @DaisyOrtiz2 |
 | R3 | Si otro equipo cambia los mismos archivos (#108, #106) | entonces aparecen conflictos al unir | 3 | 3 | 9 · Medio | Comentar en #108 y #106 qué archivos tocamos; actualizar la rama cada dos días | @DiegoLV117 |
 | R4 | Si cambiamos `CERTIFIED` y se rompen pruebas viejas | entonces Actions marca ❌ | 3 | 3 | 9 · Medio | Actualizar primero las dos pruebas existentes (D5) | @elisa1223 |
@@ -234,11 +236,11 @@ Escala de 1 a 5; nivel = probabilidad × impacto (alto ≥ 12).
 
 Dos riesgos altos (R1 y R2) → **reserva del 15 %**, como en la receta del Sprint 3.
 
-### Dictamen Go / No-Go
+### Dictamen Go / No-Go según los riesgos
 
 | Decisión | Dictamen | Fundamento |
 |---|---|---|
-| Construir el módulo #168 entre el 23 nov y el 11 dic | 🟡 **GO condicionado** | **Tiempo:** 36 h caben en 2.4 semanas a 15 h por semana, sin holgura extra; por eso es condicionado. **Dinero:** $5,700 MXN, casi todo en horas del equipo, cubiertos con recursos propios. **Calidad:** j = 1.33. |
+| Construir el módulo #168 entre el 23 de noviembre y el 11 de diciembre | 🟡 **GO condicionado** | **Tiempo:** 36 h caben en 2.4 semanas a 15 h por semana, sin holgura extra; por eso es condicionado. **Dinero:** $5,700 MXN, casi todo en horas del equipo, cubiertos con recursos propios. **Calidad:** j = 1.33. |
 | Contar con dinero de la Ola de Drips para pagar el módulo | ⛔ **NO-GO como fuente** | #168 vale 150 puntos en la Ola, pero el pago depende de que la issue se asigne a un solo equipo, se resuelva dentro de la semana de la Ola y la persona tenga KYC y wallet activa. Es un ingreso posible, no un financiamiento con el que se pueda planear. |
 | Postular al Stellar Community Fund con este módulo | ⛔ **NO-GO** | El módulo corrige textos y estados; no agrega por sí solo un uso nuevo de Stellar. Se reevalúa cuando la atestación firmada esté en red. |
 
@@ -258,15 +260,15 @@ Dos riesgos altos (R1 y R2) → **reserva del 15 %**, como en la receta del Spri
 
 | Evidencia | Dónde | Estado |
 |---|---|---|
-| Historias de usuario y Acta de Criterios con el Comité | Repositorio del Sprint 1 del equipo (GitHub Classroom) | ✅ Firmada el 31 ago 2026 |
+| Historias de usuario y Acta de Criterios con el Comité | Repositorio del Sprint 1 del equipo (GitHub Classroom, privado) | ✅ Firmada el 31 de agosto de 2026 |
 | Plan de Calidad y costo de la calidad ($12,150, j = 0.88) | Repositorio del Sprint 2 | ✅ |
-| Objetivo SMART, estimación y dictamen | `SistemasTecTlaxiaco/gestion-de-proyectos-de-software-documento-smart-group-5` | ✅ |
-| Matriz de riesgos | `SistemasTecTlaxiaco/gestion-de-proyectos-de-software-matriz-de-riesgos-group-5` | ✅ |
+| Objetivo SMART, estimación y dictamen | https://github.com/SistemasTecTlaxiaco/gestion-de-proyectos-de-software-documento-smart-group-5 (privado, del curso) | ✅ |
+| Matriz de riesgos | https://github.com/SistemasTecTlaxiaco/gestion-de-proyectos-de-software-matriz-de-riesgos-group-5 (privado, del curso) | ✅ |
 | Tablero del equipo | Project de GitHub del Sprint 3 | ✅ |
-| Observación del código del módulo | Issue #168 y sección 2 de este documento | ✅ |
-| Prototipo | App de Yucu en `main`; tabla de estado en el [README](../../../README.md#implementation-status) | 🟡 Demostración |
-| Plan de informe a la organización | `docs/gestion/equipo-5/plan-de-informe.md` (#219) | ⬜ En preparación |
-| Carta de entendimiento | `docs/gestion/equipo-5/carta.md` (#220) | ⬜ Borrador en preparación; se leerá al Comité antes del 1 dic |
+| Observación del código del módulo | https://github.com/Open-Hub-Tec/yucu-protocol/issues/168 y sección 2 de este documento | ✅ |
+| Prototipo | https://github.com/Open-Hub-Tec/yucu-protocol (tabla de estado en el [README](../../../README.md#implementation-status)) | 🟡 Demostración |
+| Plan de informe a la organización | https://github.com/Open-Hub-Tec/yucu-protocol/issues/219 | ⬜ En preparación |
+| Carta de entendimiento | https://github.com/Open-Hub-Tec/yucu-protocol/issues/220 | ⬜ Borrador en preparación; se leerá al Comité antes del 1 de diciembre |
 
 ### Ética y datos personales
 
@@ -274,14 +276,14 @@ Dos riesgos altos (R1 y R2) → **reserva del 15 %**, como en la receta del Spri
 - No prometemos ventas, ingresos ni certificaciones a nadie. El módulo hace justo lo contrario: quita promesas de certificación que la app no puede cumplir.
 - Todo lo simulado se marca como simulado (`source: 'simulated'` y `<DemoBadge />`).
 
-### Siguientes pasos
+### Evidencia: siguientes pasos con fecha
 
 | Fecha | Paso | Responsable |
 |---|---|---|
-| 22 nov | Comentario del equipo en #201 y pedir la asignación de #168 | @DaisyOrtiz2 |
-| 23 nov | Crear la rama `fix/issue-168-ia-sugiere` | @DiegoLV117 |
-| 24 nov | Casos de prueba escritos (prevención) | @elisa1223 |
-| 25 nov | Plan de informe (#219) y borrador de carta (#220) en PR | @elisa1223 · @Yare-mon |
-| 1 dic | Demo en la Feria de Integración y carta final con minuta (#220) | @DaisyOrtiz2 |
-| 11 dic | PR de #168 listo para fusionar | Equipo |
+| 22 de noviembre | Comentario del equipo en #201 y pedir la asignación de #168 | @DaisyOrtiz2 |
+| 23 de noviembre | Crear la rama `fix/issue-168-ia-sugiere` | @DiegoLV117 |
+| 24 de noviembre | Casos de prueba escritos (prevención) | @elisa1223 |
+| 25 de noviembre | Plan de informe (#219) y borrador de carta (#220) en PR | @elisa1223 · @Yare-mon |
+| 1 de diciembre | Demo en la Feria de Integración y carta final con minuta (#220) | @DaisyOrtiz2 |
+| 11 de diciembre | PR de #168 listo para fusionar | Equipo |
 | Siguiente periodo | Issue #154: conectar la IA real en el servidor | Equipo |
