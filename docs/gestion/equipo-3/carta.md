@@ -14,7 +14,7 @@
 
 **Antecedentes.** El equipo trabajó con Yosondua desde la sesión de trabajo del Sprint 1 y preparó una Propuesta Final (#212) para mejorar una parte de Yucu, una aplicación de prueba para que productores y artesanas de la Mixteca registren sus lotes y prueben su origen. La parte que mejoró el equipo es la "huella" de cada lote: un código que cambia si alguien altera la foto o los datos del lote. Ese trabajo ya está en el repositorio ([#120](https://github.com/Open-Hub-Tec/yucu-protocol/issues/120), cerrado el 23 de noviembre de 2026 con el [PR #341](https://github.com/Open-Hub-Tec/yucu-protocol/pull/341)).
 
-**Propósito (en una frase).** Que Yosondua conozca y pruebe, sin costo y con información inventada, cómo Yucu protege la huella de un lote y quita la ubicación de las fotos, para darnos su opinión antes de la Feria de Integración del 1 de diciembre de 2026.
+**Propósito (en una frase).** Que Yosondua conozca y pruebe, sin costo y con información inventada, cómo Yucu protege la huella de un lote, para darnos su opinión antes de la Feria de Integración del 1 de diciembre de 2026.
 
 ## 3. Compromisos del equipo
 
