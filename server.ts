@@ -17,10 +17,10 @@ app.use((_req: Request, res: Response, next: any) => {
 });
 
 // Límites de tamaño: el chat solo recibe texto; imagen y audio llegan en base64 y necesitan más espacio.
-app.use("/api/chat", express.json({ limit: "100kb" }));
+app.use(["/api/chat", "/api/extract-lot"], express.json({ limit: "100kb" }));
 app.use(express.json({ limit: "15mb" }));
 
-// Límite de peticiones para los endpoints que consumen la API de Gemini (protege la llave y el costo).
+// Límite de peticiones para los endpoints de IA (protege la llave y el costo).
 // Ventana fija en memoria por IP: suficiente para un piloto; en producción usar un almacén compartido.
 const AI_WINDOW_MS = 10 * 60 * 1000;
 const AI_MAX_REQUESTS = 30;
@@ -41,7 +41,7 @@ function aiRateLimit(req: Request, res: Response, next: any) {
   }
   return next();
 }
-app.use(["/api/chat", "/api/analyze-image", "/api/transcribe-audio"], aiRateLimit);
+app.use(["/api/chat", "/api/analyze-image", "/api/transcribe-audio", "/api/extract-lot"], aiRateLimit);
 
 // Health check endpoint
 app.get("/api/health", (_req: Request, res: Response) => {
