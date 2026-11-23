@@ -2,6 +2,14 @@ import React, { StrictMode, Component, ReactNode, ErrorInfo } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
+import { purgeLegacyBuyerLeads } from './utils/buyerInterviewPrivacy';
+
+// Privacidad (#121): borra los nombres y teléfonos de compradores que guardaban versiones anteriores.
+try {
+  purgeLegacyBuyerLeads(window.localStorage);
+} catch (e) {
+  console.error('No se pudo limpiar el almacenamiento local de compradores:', e);
+}
 
 interface ErrorBoundaryProps {
   children: ReactNode;
