@@ -20,7 +20,7 @@
 ## Acuerdos
 
 Cada acuerdo se convierte en una tarjeta del tablero de GitHub Projects el mismo día. Pon el número de la issue en la última columna.
-
+ Si no hubo acuerdos, escribe "Sin acuerdos".
 | # | Acuerdo | Responsable | Fecha límite | Visto bueno (organización / equipo) | Issue en el tablero |
 |---|---|---|---|---|---|
 | 1 | … | @usuario o cargo | AAAA-MM-DD | ☐ Organización ☐ Equipo | #… |
