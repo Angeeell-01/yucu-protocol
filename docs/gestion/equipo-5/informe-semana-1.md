@@ -3,7 +3,7 @@
 **Periodo:** del 16 al 22 de noviembre de 2026 (primera semana de trabajo del Sprint 4 sobre las entregas de #201)
 **Módulo:** #168 · La IA sugiere, no certifica
 **Responsable del informe:** @DaisyOrtiz2 (eduScrum Master)
-**Enviado a la organización:** 23 de noviembre de 2026, por nota de voz de WhatsApp a la persona enlace del Comité. La hoja impresa se entrega en la visita para la lectura de la carta.
+**Enviado a la organización:** 23 de noviembre de 2026, por nota de voz de WhatsApp a la persona enlace del Comité. La hoja impresa se entrega en la visita para la lectura de la carta. (mensaje entregado ✔️✔️)
 **Enviado al Product Owner:** 23 de noviembre de 2026, con un comentario en #201.
 
 > Es el primer informe. A partir del 28 de noviembre se envía cada sábado, como dice el [plan de informe](plan-de-informe.md).
