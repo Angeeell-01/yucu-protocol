@@ -29,7 +29,7 @@
 | Avance diario y bloqueos | Equipo | Al inicio de cada sesión (5 minutos) | Reunión breve y tarjetas del tablero de GitHub Projects | Quien tenga el bloqueo; lo coordina @DaisyOrtiz2 | Movimiento de tarjetas e issues en el tablero |
 | Cambio de una fecha comprometida con la organización (semáforo rojo) | Organización y Product Owner | En cuanto se sepa, al menos 3 días antes de la fecha | Llamada o nota de voz a la persona enlace; comentario en #201 | @DaisyOrtiz2 | Minuta en `minutas/` con el acuerdo nuevo |
 | Acuerdos de una reunión con la organización | Organización, Product Owner y equipo | El mismo día de la reunión | Minuta leída en voz alta al final de la sesión; copia impresa a la organización | Quien tome la minuta (rota cada reunión) | `minutas/AAAA-MM-DD.md` (sin nombres de la comunidad) |
-| Estado del PR de #168 | Product Owner y financiador | Cuando cambie (abierto, en revisión, listo) | El propio PR en GitHub | @DiegoLV117 | Historial del PR y comentarios de GitHub Actions |
+| Estado del PR de #168 | Product Owner y financiador | Cuando cambie (abierto, en revisión, listo), el mismo día | El propio PR en GitHub | @DiegoLV117 | Historial del PR y comentarios de GitHub Actions |
 
 ---
 
