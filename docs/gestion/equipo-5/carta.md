@@ -65,8 +65,7 @@ La organización y el equipo dejan por escrito que:
 
 - El código de Yucu es software libre con licencia **MIT**.
 - Los diseños, recetas, fotos, la lengua tu'un savi y los conocimientos tradicionales **siguen siendo de la organización y de la comunidad**. Esta carta no transfiere ningún derecho sobre ellos.
-- El nombre de la organización solo se usa para identificar esta colaboración en los documentos del curso y en la Feria de Integración. No se usan imágenes de la organización ni de sus integrantes sin un permiso escrito aparte.
-
+- El nombre de la organización solo se usa para identificar esta colaboración en los documentos del curso y en la Feria de Integración. No se usan imágenes de la organización ni de sus integrantes sin un permiso escrito aparte, que se guarda fuera de este repositorio.
 ## 8. Comunicación, vigencia y terminación
 
 - **Contactos:** por la organización, la persona enlace que designe el Comité; por el equipo, la eduScrum Master (@DaisyOrtiz2).
