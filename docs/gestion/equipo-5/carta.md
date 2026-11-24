@@ -27,7 +27,8 @@ Copiados del cronograma de la propuesta. El equipo no promete nada fuera de esta
 
 | Compromiso | Cómo lo puede comprobar la organización | Fecha | Responsable |
 |---|---|---|---|
-| Leer esta carta a la organización, en lenguaje sencillo, y dejar tiempo para consultarla en asamblea | Minuta de la sesión, leída en voz alta y entregada impresa | Antes del 1 de diciembre de 2026 | @DaisyOrtiz2 |
+| Leer esta carta a la organización, en lenguaje sencillo, y dejar tiempo para consultarla en asamblea | Minuta de la sesión, leída en voz alta y entregada impresa 
+| Antes del 1 de diciembre de 2026 (fecha por confirmar con el Comité) | @DaisyOrtiz2 |
 | Enviar un informe semanal sencillo (nota de voz de un minuto y hoja impresa) | Las notas de voz recibidas y las hojas entregadas | Cada sábado, del 28 de noviembre al 12 de diciembre de 2026 | @DaisyOrtiz2 |
 | Mostrar los textos nuevos de la app ("Sugerir calidad (la confirma una persona)") y anotar la opinión de la organización | Demo en la Feria de Integración o en la visita, y minuta | 1 de diciembre de 2026 | @Yare-mon |
 | Terminar el cambio en el código y dejarlo listo para revisión | Enlace al PR, que se comparte en el informe | 11 de diciembre de 2026 | @DiegoLV117 · @elisa1223 |
