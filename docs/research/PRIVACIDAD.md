@@ -30,6 +30,15 @@ Este repositorio es **público**: todo lo que se sube aquí lo puede leer, copia
 5. **Nada de números de control, CURP, teléfonos ni direcciones** de estudiantes o participantes en documentos públicos. Para dar crédito a un estudiante basta su nombre o su usuario de GitHub.
 6. **Tampoco uses adjuntos de GitHub** (arrastrar un archivo a una issue o PR): generan un enlace público `github.com/user-attachments/...` que no se puede borrar desde el repo.
 
+## Compradores entrevistados: código anónimo
+
+En las entrevistas y pruebas de usabilidad con compradores, cada persona se identifica **solo con un código anónimo secuencial**: `C-01`, `C-02`, `C-03`, …
+
+- Usa el mismo código en la entrevista, en la prueba SUS y en el resumen, para poder relacionar las respuestas de una misma persona.
+- Nunca escribas junto al código su nombre, iniciales, teléfono ni dirección.
+- Si la persona acepta que la contacten cuando se abran pedidos, anota solo **Sí/No** en la app o en la issue. Su contacto va en `.investigacion_privada/` (por ejemplo, una tabla `código → contacto`), nunca en el repositorio.
+- La pantalla "Modo Campo" no pide nombre ni teléfono y solo guarda el conteo de respuestas Sí/No. El equipo asigna el código fuera de la app. Al abrir la app se borran los contactos que guardaban versiones anteriores (clave `raiz_buyer_leads`).
+
 ## Antes de abrir tu PR
 
 - [ ] Mi documento no tiene nombres de personas entrevistadas, solo rol y comunidad.

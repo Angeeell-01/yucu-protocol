@@ -26,13 +26,13 @@ export const BuyerResearchIssueModal: React.FC<BuyerResearchIssueModalProps> = (
   const [copied, setCopied] = useState<boolean>(false);
 
   // Formulario de campo: resumen de la entrevista, sin datos de contacto del comprador.
-  const [studentName, setStudentName] = useState('Castro Jared & Dulce Maetzy');
+  const [studentName, setStudentName] = useState('');
   const [studentGroup, setStudentGroup] = useState('5º Semestre Grupo B - Ing. en Sistemas Computacionales');
   const [buyerCity, setBuyerCity] = useState('Tlaxiaco, Oaxaca');
   const [buyerSegment, setBuyerSegment] = useState('Barista / Cafetería de especialidad');
   const [interestedProducts, setInterestedProducts] = useState('Café de especialidad (2kg), Huipil Triqui de telar');
   const [willingnessToPayExtra, setWillingnessToPayExtra] = useState('120');
-  const [consentForFutureContact, setConsentForFutureContact] = useState(true);
+  const [consentForFutureContact, setConsentForFutureContact] = useState(false);
   const [susScore, setSusScore] = useState(85);
   const [painsObserved, setPainsObserved] = useState<string[]>([
     'Duda de autenticidad frente a copias industriales',
@@ -67,8 +67,8 @@ assignees: ''
    Instituto Tecnológico de Tlaxiaco (TecNM). Request verbal consent before taking notes.
 3. Zero-Bias Principle: Never "sell" or explain where to click. Let the buyer explore the screen 
    using the "Think Aloud Protocol". Every hesitation or doubt is a valuable software insight.
-4. Future Contact Consent: Ask if the buyer authorizes saving their WhatsApp/Phone number to be 
-   contacted when the project is fully launched and production orders open.
+4. Future Contact Consent: Ask if the buyer agrees to be contacted (Yes/No). Never write
+   their name or phone number in this issue: identify them only with an anonymous code (C-01, C-02, …).
 5. Language Requirement: Complete and submit this report in English for the international
    open-source software evaluation committee.
 ================================================================================
@@ -92,7 +92,7 @@ assignees: ''
 ---
 
 ## 👤 2. Buyer Profile & Demographics
-- **Identifier / Alias:** <!-- e.g., Buyer-01 (barista & cultural collector). No name or exact age. -->
+- **Anonymous code:** <!-- e.g., C-01 (never a name or initials) -->
 - **Age & Occupation:** 
 - **City of Residence:** <!-- e.g., Tlaxiaco, Oaxaca / Mexico City / International tourist -->
 - **Buyer Segment:**
@@ -256,7 +256,7 @@ assignees: ''
 ---
 
 ## 👤 2. Perfil del Comprador Entrevistado
-- **Identificador / Alias:** <!-- Ej. Comprador-01 (diseñadora y coleccionista textil). Sin nombre ni edad exacta. -->
+- **Código anónimo:** <!-- Ej. C-01 (nunca nombre ni iniciales) -->
 - **Edad y Ocupación:** 
 - **Lugar de Residencia:** <!-- Ej. Tlaxiaco, Oaxaca / CDMX / Extranjero -->
 - **Segmento de Comprador:**
