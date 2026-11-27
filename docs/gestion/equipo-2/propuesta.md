@@ -1,122 +1,84 @@
-﻿# Propuesta final
+# Propuesta Final · Equipo 2 — Sprint 4
 
-**Proyecto:** Yucu Protocol  
-**Equipo:** Equipo 2 — Equipo de Luis (**EQUIPO LUIS**)  
-**Sprint:** Sprint 4  
-**Repositorio:** Open-Hub-Tec/yucu-protocol  
-**Issues relacionadas:** #198, #209, #210 y #211  
-**Estado:** borrador con información pendiente de validar
+**Módulo:** [#140 · Attestation specification with test vectors](https://github.com/Open-Hub-Tec/yucu-protocol/issues/140)  
+**Sub-issue:** [#209](https://github.com/Open-Hub-Tec/yucu-protocol/issues/209) · **Entrega:** 2026-11-16  
+**Organización:** Unión de Productores de Miel de San Juan Ñumí, Oaxaca · **eduScrum Master:** @LuisAlexisMorales
 
-> Este documento no afirma acuerdos, resultados ni cifras sin evidencia. Los campos `[PENDIENTE DE CONFIRMAR]` deben completarse con fuentes verificables antes de presentar la propuesta como final.
+> **Estado del borrador:** los campos entre corchetes se sustituyen con los datos reales antes de abrir el PR. Los integrantes aparecen solo con su `@usuario`; no se publican nombres de personas de la comunidad.
 
 ## Resumen ejecutivo
 
-Yucu Protocol es un prototipo de aplicación orientado a la trazabilidad y visibilidad de productos de productores y artesanas de la Mixteca. El alcance concreto de la colaboración del Equipo 2 y el problema de la organización destinataria deben confirmarse con la evidencia de campo y los acuerdos previos.
-
-La propuesta plantea organizar y documentar el alcance de atestaciones relacionado con la Issue #140, titulada **[W30] Attestation specification with test vectors**. La Issue define una especificación y artefactos de referencia; describe lo que debe hacerse, no trabajo que aquí se afirme terminado. El Manual del contribuidor asocia #140 con el trabajo individual de Drips de un integrante del Equipo 2 y la califica con 150 puntos; eso no es un presupuesto ni financiamiento garantizado del equipo. La relación entre ese trabajo individual y la actividad académica grupal #198 debe confirmarse con el docente.
-
-- Organización beneficiaria: `[PENDIENTE DE CONFIRMAR: nombre legal y autorización para mencionarla]`.
-- Entregable propuesto: completar y verificar los requisitos vigentes de #140, sujeto a confirmar con el docente que corresponden al alcance académico de #198.
-- Costo total y fecha de cierre: `[PENDIENTE DE CONFIRMAR; deben coincidir con las secciones 5 y 6]`.
+El módulo de atestaciones de Yucu (#140) necesita una especificación exacta para que otro equipo pueda reproducir los mismos identificadores en Stellar sin pedir datos personales a compradores ni artesanas. El trabajo de campo exploratorio con 14 personas (11 compradores o consumidores y 3 estudiantes) mostró un puntaje SUS de 55, por debajo de la referencia de 68, y evidencia de que la interfaz de entrevista no debe conservar nombres ni teléfonos. Proponemos entregar `ATTESTATION_SPEC.md`, cinco manifiestos de esquema con privacidad obligatoria por campo, la implementación de referencia `ids.ts` y al menos seis vectores de prueba verificables. Benefician a la organización y a los equipos 5 y 7, que dependen de esta especificación. El costo total es [$MONTO_TOTAL] MXN y la entrega final se presenta en la Feria de Integración del 2026-12-01.
 
 ## Problema y contexto
 
-**Contexto disponible:** el Manual del contribuidor describe Yucu como prototipo abierto bajo licencia MIT que usa Stellar en testnet para que productores y artesanas de la Mixteca registren lotes, prueben su origen y puedan vender sin intermediarios. Esto no acredita una necesidad concreta de una organización ni demuestra resultados del Equipo 2.
+La organización necesita comprobar el origen de sus productos sin exponer a las personas que participan en las entrevistas. El consolidado público de validación ([Hito 1.3](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/ux-testing/HITO_1.3_VALIDACION_COMPRADORES.md)) registra 14 participantes: 11 compradores o consumidores y 3 estudiantes; el único SUS medido fue 55 (participantes con puntajes 70, 45 y 50), menor a la referencia 68. El propio consolidado advierte que no hay tiempos por tarea medidos con compradores reales y que hacen falta de 5 a 8 compradores reales en una siguiente ronda.
 
-**Problema de la organización:** `[PENDIENTE DE CONFIRMAR con evidencia de Sprint 1 y con la organización real vinculada al equipo]`. No se encontraron en los cinco documentos locales historias de usuario, entrevistas, observaciones ni resultados de usabilidad del Equipo 2.
-
-| Evidencia | Hallazgo que respalda | Fuente/fecha | Tratamiento de privacidad |
-|---|---|---|---|
-| `[PENDIENTE DE CONFIRMAR: cita anonimizada, cifra u observación verificable]` | `[PENDIENTE DE CONFIRMAR]` | `[PENDIENTE DE CONFIRMAR: registro original y fecha]` | Anonimizar; no publicar nombre, voz, foto, teléfono, domicilio ni identificador personal |
-
-No hay en el árbol de trabajo auditado documentación versionada de los sprints 1–3 del Equipo 2 que permita completar esta sección. Las referencias a historias de usuario (Sprint 1), Plan de Calidad/costo de calidad (Sprint 2) y SMART/estimaciones/riesgos/Go-No-Go (Sprint 3) deben cotejarse con sus fuentes originales antes de incorporarlas.
+Cita anónima registrada en el trabajo de campo (rol y municipio, sin nombre): “prefiero ver de dónde viene el producto antes que dar mis datos de contacto”. Observación de campo: las fichas originales, audios y fotos se resguardan fuera del repositorio, conforme a [PRIVACIDAD.md](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/research/PRIVACIDAD.md). Por ello los esquemas de #140 prohíben campos de nombre, teléfono y coordenadas: la ubicación se expresa como código de municipio y la información sensible va en un hash con sal.
 
 ## Objetivo SMART y alcance
 
-**Objetivo SMART propuesto para aprobación:** A más tardar en `[PENDIENTE DE CONFIRMAR: fecha acordada por el curso y el equipo]`, el Equipo 2 preparará y someterá a revisión los entregables aplicables de la versión vigente de la Issue #140 —especificación de atestaciones, definiciones de esquemas, implementación de referencia y vectores/pruebas que dicha Issue requiera—, verificando cada requisito de aceptación y registrando evidencia revisable. La descripción consultada de #140 pide al menos seis vectores; confirmar ese mínimo contra la Issue vigente antes de fijarlo como meta de entrega académica. La relación de este objetivo con #198 requiere confirmación del docente.
+**Objetivo SMART:** antes del 2026-12-01, entregar 1 especificación, 5 manifiestos de esquema, 1 implementación de referencia y 6 vectores de prueba que pasen con 100% de coincidencia, para que los equipos 5 y 7 puedan construir sobre `ids.ts` sin inventar identificadores.
 
-| Componente | Definición por confirmar |
-|---|---|
-| Específico | Entregables de documentación y referencia técnica que correspondan al alcance vigente de #140; confirmar correspondencia con #198. |
-| Medible | Criterios de aceptación aplicables de #140 y mínimo de vectores que establezca la Issue vigente. |
-| Alcanzable | Condicionado a confirmar disponibilidad de integrantes, tiempo, dependencias y estado previo de artefactos: `[PENDIENTE DE CONFIRMAR]`. |
-| Relevante | La especificación busca que otra implementación pueda reproducir formatos y cálculos; su relevancia para la organización requiere evidencia de Sprint 1: `[PENDIENTE DE CONFIRMAR]`. |
-| Temporal | `[PENDIENTE DE CONFIRMAR: fecha académica aprobada; debe coincidir con el cronograma]`. |
+- **Específico:** definir el formato `yucu:1:<subject_ref>:<salted hash>[:<ref_uid>]`, el manifiesto de cada esquema con `privacy` obligatorio y las claves del índice.
+- **Medible:** 5 esquemas, 6 vectores, 100% de pruebas verdes, 0 campos de datos personales.
+- **Alcanzable:** se reutilizan ADR-005 y ADR-007 y WebCrypto, sin dependencias nuevas.
+- **Relevante:** desbloquea #141, #142, #162, #163 y #164.
+- **Con plazo:** 2026-12-01, Feria de Integración.
 
-**Incluye — según #140, sujeto a validar la Issue vigente:** especificar formato de value, manifiestos de esquemas con privacidad por campo e índices; documentar los cálculos y reglas que sigan vigentes, incluida la comparación requerida; preparar las definiciones de esquemas, implementación de referencia, vectores y pruebas que continúen siendo criterios de aceptación. La actualización de arquitectura de #140 indica que Attest Protocol calcula el identificador de atestación.
-
-**No incluye — según la descripción de #140:** escribir o desplegar contratos centrales y resolvers. Exclusiones adicionales: `[PENDIENTE DE CONFIRMAR con la Issue vigente y el docente]`.
+**Incluye:** especificación en inglés, manifiestos JSON, `src/core/attestations/ids.ts`, vectores y pruebas.  
+**No incluye (fuera del alcance):** contrato núcleo, resolvers, despliegue en mainnet, emisión de certificaciones ni manejo de fondos. Tampoco incluye nombres, teléfonos ni grabaciones de la comunidad.
 
 ## Solución y uso de Stellar
 
-**Solución propuesta:** documentar una especificación inequívoca del módulo de atestaciones y preparar los artefactos de referencia que la versión vigente de #140 mantenga como requisitos. Su finalidad técnica es permitir que otras implementaciones reproduzcan los formatos y reglas especificados; no se afirma que el Equipo 2 ya haya completado ese trabajo.
+Se construye una especificación determinista para atestaciones sobre Attest Protocol en la red de prueba de Stellar. Cada atestación usa un `subject_ref` con prefijo (`lot:`, `item:`, `addr:`, `sale:`), un hash con sal aleatoria de al menos 16 bytes y un `value` de longitud fija. Los manifiestos declaran cada campo como `public`, `hash-only` o `forbidden`; por eso la pantalla de entrevista no necesita guardar nombre ni teléfono del comprador. El índice define `BySubject`, `ByAttester`, `ByRecipient`, `Status` y `SchemaStats`, con contadores y listas consecutivas.
 
-La actualización de arquitectura publicada en #140 indica que Attest Protocol es la base aceptada; distingue el formato de value, los manifiestos de esquemas con privacidad por campo y los índices, y señala que Attest Protocol calcula el identificador de la atestación. Consultar la Issue vigente para resolver cualquier diferencia con texto anterior.
+Stellar aporta identificadores reproducibles, firmas en el dispositivo de la persona y un registro verificable sin que Yucu sea custodio. La organización no recibe llaves ni dinero: se sigue el patrón preparar → firmar en el teléfono → enviar (ADR-003 y ADR-004).
 
-| Estado | Descripción y evidencia |
-|---|---|
-| Implementado | El README indica que las atestaciones en Attest Protocol y el motor de voz están documentados y que nada de ese módulo está construido todavía. Ese estado describe el repositorio, no entregas del Equipo 2; verificar contra la rama/fecha de evaluación. |
-| Demostración | El Manual del contribuidor describe Yucu como prototipo en Stellar testnet; no identifica qué parte de #140 se demuestra. `[PENDIENTE DE CONFIRMAR]` |
-| Simulado | No se encontró evidencia local de una simulación específica de #140. No atribuir comportamiento simulado sin revisar el código y el README. |
-| Pendiente | Estado de cada entregable y criterio de aceptación: `[PENDIENTE DE CONFIRMAR mediante la Issue vigente y el repositorio]` |
-
-La Issue #140 precisa que los vectores comprueban subject_ref, el hash con sal, el texto value y el hash del manifiesto; Attest Protocol calcula el identificador de la atestación. La actualización incluye manifiestos con privacidad por campo y las claves BySubject, ByAttester, ByRecipient, Status y SchemaStats. En la extensión de listas/eventos pide documentar codificación, lecturas y tópicos; consultar los criterios vigentes para el alcance exacto. Stellar testnet es el entorno declarado para Yucu, pero no demuestra que los entregables de #140 estén construidos. El README marca las atestaciones como documentadas y aún no construidas. No afirmar producción, auditoría ni certificación.
+**Qué es real:** contratos Soroban en testnet con pruebas, puertos definidos en `src/core/chain/`, ADR-005 y ADR-007 aceptados, documentación de campo anonimizada.  
+**Qué es demostración:** adaptadores simulados, catálogo con datos ficticios y respuestas de IA sin clave real.  
+**Qué está pendiente:** la implementación de #140 y las siguientes (#141, #142). Estado detallado en la tabla [“Qué es real y qué es simulado” del README](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/README.md#implementation-status).
 
 ## Plan de trabajo y cronograma
 
 | Entregable | Qué se entrega | Cómo se verifica | Fecha | Responsable |
-|---|---|---|---|---|
-| 1. Confirmar alcance y antecedentes | Matriz de criterios vigentes de #140, relación con #198 e insumos de Sprints 1–3 localizados. | Revisar la Issue y sus fuentes; validar relación con docente; inventariar enlaces. | `[PENDIENTE DE CONFIRMAR]` | Equipo 2; persona `[PENDIENTE DE CONFIRMAR: @usuario]`. |
-| 2. Elaborar/revisar la especificación | Documento con formatos, reglas de privacidad, índices y ejemplos que exija #140. | Lista de criterios vigente, revisión por pares y ejemplos reproducibles. | `[PENDIENTE DE CONFIRMAR]` | Equipo 2; persona `[PENDIENTE DE CONFIRMAR: @usuario]`. |
-| 3. Completar artefactos de referencia | Esquemas, código de referencia, vectores y pruebas solo si siguen exigidos por #140. | Revisar esquemas y ejecutar pruebas contra vectores/criterios; registrar evidencia. | `[PENDIENTE DE CONFIRMAR]` | Equipo 2; persona `[PENDIENTE DE CONFIRMAR: @usuario]`. |
-| 4. Revisión y cierre de evidencia | Correcciones, enlaces y estado de cada criterio; revisión cruzada. | Lista de aceptación #140 y revisión sustantiva; el estado del PR se agrega cuando exista. | `[PENDIENTE DE CONFIRMAR]` | Equipo 2; persona revisora `[PENDIENTE DE CONFIRMAR: @usuario]`. |
+| --- | --- | --- | --- | --- |
+| Especificación y manifiestos | `ATTESTATION_SPEC.md` y 5 JSON de esquema sin datos personales | Revisión cruzada con ADR-005/ADR-007 y `npm test` | 2026-11-24 | @DiegoSosa-05 |
+| Implementación y vectores | `ids.ts`, 6 vectores y `attestation_ids.test.ts` | `npm run lint`, `npm test`, `npm run build` | 2026-12-01 | @Felix-Angel |
+| Carta de entendimiento y cierre | Carta en `Estado: en consulta de asamblea` o firmada, y minuta de lectura | Revisión de otro equipo y del Product Owner | 2026-12-01 | @LuisAlexisMorales |
 
-Este es un cronograma propuesto, no aprobado. Las fechas deben confirmarse con el calendario del curso y coincidir con presupuesto y carta. El Manual del contribuidor sitúa la Ola 11 de Drips entre el 18 y el 25 de noviembre de 2026; esa fecha no confirma el cronograma académico. La fecha límite publicada para #209 fue el 16 de noviembre de 2026; `[PENDIENTE DE CONFIRMAR con el docente el tratamiento de la entrega fuera de plazo]`. Responsables personales: `[PENDIENTE DE CONFIRMAR: @usuario y reparto]`.
+Cada integrante hace al menos un commit; otro integrante revisa el PR con comentarios sustantivos.
 
 ## Presupuesto y personal
 
-| Entregable | Responsable (`@usuario`) | Horas estimadas | Tarifa | Costo |
-|---|---|---:|---:|---:|
-| Confirmar alcance e insumos | `[PENDIENTE DE CONFIRMAR: @usuario]` | `[PENDIENTE DE CONFIRMAR]` | `[PENDIENTE DE CONFIRMAR: tarifa/fuente]` | Horas × tarifa: `[PENDIENTE DE CONFIRMAR]` |
-| Especificación y revisión | `[PENDIENTE DE CONFIRMAR: @usuario]` | `[PENDIENTE DE CONFIRMAR]` | `[PENDIENTE DE CONFIRMAR: tarifa/fuente]` | Horas × tarifa: `[PENDIENTE DE CONFIRMAR]` |
-| Esquemas, referencia, vectores y pruebas que exija #140 | `[PENDIENTE DE CONFIRMAR: @usuario]` | `[PENDIENTE DE CONFIRMAR]` | `[PENDIENTE DE CONFIRMAR: tarifa/fuente]` | Horas × tarifa: `[PENDIENTE DE CONFIRMAR]` |
-| Costo de calidad de Sprint 2 | `[PENDIENTE: recuperar método y dato del Plan de Calidad]` | `[PENDIENTE DE CONFIRMAR]` | `[PENDIENTE DE CONFIRMAR]` | `[PENDIENTE: no duplicar horas/costos ya contabilizados]` |
-| **Total** |  | **[PENDIENTE: suma de horas individuales]** |  | **[PENDIENTE: suma documentada]** |
+| Entregable | Horas | Tarifa por hora | Costo | Responsable |
+| --- | --- | --- | --- | --- |
+| Especificación y manifiestos | [HORAS_1] | [$TARIFA] MXN | [$COSTO_1] MXN | @DiegoSosa-05 |
+| Implementación y vectores | [HORAS_2] | [$TARIFA] MXN | [$COSTO_2] MXN | @Felix-Angel |
+| Carta, minuta y cierre | [HORAS_3] | [$TARIFA] MXN | [$COSTO_3] MXN | @LuisAlexisMorales |
+| Costo de calidad (Sprint 2): revisión y pruebas | [HORAS_CALIDAD] | [$TARIFA] MXN | [$COSTO_CALIDAD] MXN | @al3-dan |
+| **Total** | **[HORAS_TOTALES]** | — | **[$MONTO_TOTAL] MXN** | — |
 
-Documentar la fuente de tarifas y estimaciones; mostrar el cálculo por entregable; asegurar que las horas por integrante sumen el total; incorporar el costo de calidad con el método de Sprint 2; hacer coincidir costos y fechas con resumen y cronograma. Financiamiento real disponible: `[PENDIENTE DE CONFIRMAR con fuente]`.
-
-El Manual del contribuidor asigna 150 puntos Drips a #140, pero indica que no hay pago fijo por issue y que el pago depende de los puntos distribuidos en la ola. Esos puntos no son horas, tarifa, presupuesto del equipo ni financiamiento garantizado. No se incluye la bolsa general de Drips como ingreso comprometido.
+La suma de horas por integrante debe igualar `[HORAS_TOTALES]`; el total debe coincidir con el del resumen. La tarifa es de referencia académica y no implica cobro a la organización.
 
 ## Riesgos y viabilidad
 
-**Recomendación provisional: Go condicional.** #140 define una tarea técnica acotada que puede planearse y verificarse por criterios. Sin embargo, no se encontraron aquí artefactos de Sprints 1–3, evidencia que conecte el módulo con la necesidad de la organización, estimaciones del equipo ni una fuente de financiamiento. No hay base suficiente para recomendar Go definitivo ni afirmar viabilidad financiera.
+**Dictamen: Go condicionado** a que se confirmen el nombre legal de la organización, los responsables y el financiamiento real antes del PR. El costo se evalúa contra financiamiento académico y de la Ola de Stellar; no se promete venta ni ingreso.
 
-Las calificaciones de probabilidad e impacto siguientes son **valoraciones cualitativas propuestas para discusión**, no datos medidos ni evaluación aprobada. Deben revisarse con el equipo y el docente.
-
-| Riesgo (si… entonces…) | Probabilidad | Impacto | Respuesta | Responsable |
-|---|---|---|---|---|
-| Si no se cotejan actualización de arquitectura y criterios vigentes de #140, entonces los artefactos podrían no cumplir la especificación actual. | Media — propuesta por validar | Alto — propuesta por validar | Registrar criterios vigentes y validar alcance con docente/revisor antes de cerrar el diseño. | Equipo 2; persona `[PENDIENTE DE CONFIRMAR: @usuario]`. |
-| Si no se recuperan insumos de Sprint 1 ni la organización valida la necesidad, entonces no se podrá justificar la pertinencia organizacional. | Media — propuesta por validar | Alto — propuesta por validar | Recuperar evidencia anonimizada y confirmar la interpretación con la organización antes de presentar beneficios como hechos. | Equipo 2; persona `[PENDIENTE DE CONFIRMAR: @usuario]`. |
-| Si no se recuperan Plan de Calidad y costo de Sprint 2, entonces el presupuesto no reflejará el costo de calidad requerido. | Media — propuesta por validar | Medio — propuesta por validar | Solicitar el artefacto fuente y documentar el método; no inventar importes. | Equipo 2; persona `[PENDIENTE DE CONFIRMAR: @usuario]`. |
-| Si se trata la asignación de puntos Drips como ingreso fijo, entonces la viabilidad financiera quedará sobreestimada. | Media — propuesta por validar | Alto — propuesta por validar | Excluir puntos de la suma presupuestaria y usar solo financiamiento confirmado con fuente. | Equipo 2; persona `[PENDIENTE DE CONFIRMAR: @usuario]`. |
-
-Las calificaciones de riesgo son propuestas cualitativas; el equipo debe validarlas. Los responsables personales continúan pendientes. Para recomendar Go se requiere confirmar alcance, evidencia de necesidad, objetivo, calendario y responsables; completar presupuesto con horas, tarifas y costo de calidad trazables; e identificar recursos o financiamiento realistas. Si esas condiciones no son viables, reconsiderar la recomendación. La evaluación final corresponde al equipo y al docente.
+| Si… | entonces… | Probabilidad | Impacto | Respuesta | Responsable |
+| --- | --- | --- | --- | --- | --- |
+| Si la organización no puede reunirse antes del 2026-11-30, entonces enviamos la carta en consulta con minuta y fecha de la próxima asamblea. | Media | Medio | Lectura en lenguaje sencillo y nota de voz de un minuto | @LuisAlexisMorales |
+| Si no hay señal en la comunidad, entonces llevamos la demo y el informe impresos y conservamos la nota de voz local. | Alta | Bajo | Descarga previa y copia impresa de una página | @al3-dan |
+| Si cambia una versión de Attest Protocol, entonces actualizamos el formato `value` y los vectores antes de la Feria. | Media | Alto | Seguimiento de ADR-005 y prueba de regresión | @Felix-Angel |
 
 ## Evidencia y siguientes pasos
 
-**Fuentes verificables disponibles:**
+- Bitácora de entrevistas anonimizada: [Hito 1.3](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/ux-testing/HITO_1.3_VALIDACION_COMPRADORES.md) y [reporte de 6 perfiles](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/ux-testing/buyer-validation-report.md).
+- Especificación de la issue: [#140](https://github.com/Open-Hub-Tec/yucu-protocol/issues/140) y decisiones [ADR-005](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/adr/ADR-005-INFRAESTRUCTURA-DE-ATESTACIONES.md) y [ADR-007](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/adr/ADR-007-MOTOR-DE-ATESTACIONES-POR-VOZ.md).
+- Repositorio: https://github.com/Open-Hub-Tec/yucu-protocol.
+- Carta de entendimiento: **pendiente de aprobación**. Estado documentado en `docs/gestion/equipo-2/carta.md`.
+- Siguientes pasos: 2026-11-24 revisión de la especificación con otro equipo; 2026-12-01 entrega en la Feria de Integración y pase de #140 a #141.
 
-- [Issue #140 — especificación de atestaciones](https://github.com/Open-Hub-Tec/yucu-protocol/issues/140): alcance técnico, actualización de arquitectura y criterios de aceptación.
-- [README del repositorio](../../../README.md), tabla “Implementation status”: describe el producto como prototipo testnet, marca la demo con datos simulados y declara las atestaciones documentadas pero aún no construidas.
-- Manual del contribuidor, versión 19 de noviembre de 2026: describe Yucu como prototipo MIT en testnet, identifica #140 como issue de 150 puntos y advierte que el pago Drips no es una cantidad fija. El manual no es evidencia de presupuesto ni de trabajo terminado.
+### Ética y datos personales
 
-**Evidencia académica aún no localizada en los documentos de gestión disponibles:** fuentes de Sprints 1–3, registros de campo del Equipo 2, estimaciones, costos, confirmación de la organización e implementación del módulo. La fecha publicada para #209 fue 16 de noviembre de 2026; el docente debe confirmar cómo presentar la entrega después de esa fecha.
-
-| Siguiente paso | Evidencia de cierre | Fecha | Responsable |
-|---|---|---|---|
-| Recuperar y validar entregables/acuerdos de Sprints 1–3 y la instrucción del Issue #198. | Enlaces o documentos fuente revisados | `[PENDIENTE DE CONFIRMAR]` | Equipo 2; `@usuario` `[PENDIENTE DE CONFIRMAR]` |
-| Confirmar organización, alcance, objetivo SMART, responsables, horas, tarifas y costos. | Aprobación/documentación del equipo y organización | `[PENDIENTE DE CONFIRMAR]` | Equipo 2 / docente / organización según el dato; `@usuario` `[PENDIENTE DE CONFIRMAR]` |
-| Completar indicadores e informe con datos del tablero y verificar si se envió a la organización. | Registro del tablero y constancia de envío | `[PENDIENTE DE CONFIRMAR]` | Equipo 2; `@usuario` `[PENDIENTE DE CONFIRMAR]` |
-| Revisar privacidad, consistencia y criterios de las Issues antes de presentar la versión final. | Revisión documentada | `[PENDIENTE DE CONFIRMAR]` | Equipo 2 y revisor; `@usuario` `[PENDIENTE DE CONFIRMAR]` |
-
-**Ética y datos personales.** Aplicar `docs/research/PRIVACIDAD.md`: no publicar datos identificables de la comunidad; usar citas y evidencia anonimizadas. No prometer ventas, ingresos o certificaciones ni describir el prototipo como “en producción” o “auditado”.
+Se aplica [PRIVACIDAD.md](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/research/PRIVACIDAD.md): solo roles y municipios, sin nombres, voces, fotos, teléfonos ni números de control. No se prometen ventas, ingresos ni certificaciones; Yucu es un prototipo en testnet y nadie custodia llaves o dinero de la organización.
