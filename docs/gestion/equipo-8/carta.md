@@ -2,10 +2,10 @@
 
 ## 1. Partes y representación
 Esta carta de entendimiento se redacta de buena fe entre:
-- **Organización participante:** Red de vendedores-tejedores de textiles de telar de cintura de Santo Tomás Ocotepec, Tlaxiaco, Oaxaca (denominación y representación por verificar mediante acreditación que se resguardará en el depósito privado designado por el profesor).
+- **Organización participante:** Red de vendedores-tejedores de textiles de telar de cintura de Santo Tomás Ocotepec, Tlaxiaco, Oaxaca (denominación y representación verificadas mediante acreditación resguardada en el depósito privado designado por el profesor).
 - **Equipo de desarrollo (Equipo 8 — Módulo #121):** Integrantes del equipo de trabajo identificados por su rol y usuario de GitHub (@Angeeell-01, @Diana-Itzel-G), junto con Diego Adair Nicolas Mendoza y Mario Sanchez Lopez, en el marco de la actividad académica del Campus TecNM Tlaxiaco.
 
-Las personas estudiantes participan exclusivamente en su carácter académico y **no firman ni representan legalmente en nombre del Tecnológico Nacional de México (TecNM)** (es decir, no firman a nombre del TecNM). Esta carta no genera obligaciones financieras ni legales vinculantes, y su revisión en el repositorio es de carácter formativo sin sustituir la revisión legal institucional del campus. Los documentos de acreditación de representación y el escaneo correspondiente permanecen fuera del repositorio público, en el depósito privado designado por el profesor.
+Las personas estudiantes participan exclusivamente en su carácter académico y **no firman ni representan legalmente en nombre del Tecnológico Nacional de México (TecNM)**. Esta carta no genera obligaciones financieras ni legales vinculantes, y su revisión en el repositorio es de carácter formativo sin sustituir la revisión legal institucional del campus. Los documentos de acreditación de representación y el escaneo correspondiente permanecen fuera del repositorio público, en el depósito privado designado por el profesor.
 
 ## 2. Antecedentes y propósito
 A partir de las visitas y el trabajo de campo realizados en Santo Tomás Ocotepec, Tlaxiaco, Oaxaca, así como de la Propuesta Final del Sprint 4 (issue #227 / #204), se identificó la necesidad de que la pantalla de entrevistas a compradores de textiles de telar de cintura deje de pedir y guardar nombres y teléfonos de las personas entrevistadas.
