@@ -1,85 +1,73 @@
-﻿# Carta de entendimiento — Borrador
+# Carta de entendimiento · Equipo 2 — Sprint 4
 
-**Proyecto:** Yucu Protocol  
-**Equipo:** Equipo 2 — Equipo de Luis (**EQUIPO LUIS**)  
-**Sprint:** Sprint 4  
-**Repositorio:** Open-Hub-Tec/yucu-protocol  
-**Issues relacionadas:** #198, #209 y #211
+**Sub-issue:** [#211](https://github.com/Open-Hub-Tec/yucu-protocol/issues/211)  
+**Módulo:** [#140 · Attestation specification with test vectors](https://github.com/Open-Hub-Tec/yucu-protocol/issues/140)
 
-> **Borrador para consulta.** No constituye contrato ni genera obligaciones legales o financieras. Los datos y compromisos marcados como pendientes deben confirmarse con la organización y el equipo antes de presentar esta carta. Las personas estudiantes no firman en representación del TecNM.
+> **BORRADOR PARA REVISIÓN CRUZADA.** Los campos entre corchetes se completan con datos reales. En el repo público solo aparecen roles y `@usuario`; la firma, el documento de representación y cualquier dato personal quedan en almacenamiento privado.
 
-## Partes y representación
+**Entre:**
 
-Por una parte, `[PENDIENTE DE CONFIRMAR: nombre legal de la organización]`, representada para esta colaboración por `[PENDIENTE: rol de la persona firmante]`. La autoridad de representación debe verificarse; la evidencia correspondiente se conservará únicamente en el almacenamiento privado designado por el docente y no se publicará en el repositorio.
+- **Unión de Productores de Miel de San Juan Ñumí, Oaxaca**, representada por [ROL_DE_LA_PERSONA_CON_AUTORIDAD], cuya representación se acredita con un documento que permanece en almacenamiento privado; y
+- **Equipo 2 del TecNM Campus Tlaxiaco**, integrado por @LuisAlexisMorales (eduScrum Master), @DiegoSosa-05, @Felix-Angel y @al3-dan.
 
-Por otra parte, el Equipo 2 — Equipo de Luis, del proyecto académico Yucu Protocol, TecNM Campus Tlaxiaco. Las personas estudiantes no firman en nombre del TecNM. Integrantes/contacto por rol: `[PENDIENTE: confirmar roles y @usuario del equipo; no publicar nombres de la comunidad]`.
+Los estudiantes **no firman a nombre del TecNM**. Esta carta se hace de buena fe y no crea obligaciones económicas ni legales; no sustituye la revisión jurídica del plantel.
 
-## Antecedentes
+## Antecedentes y propósito
 
-Las visitas, la sesión de trabajo de Sprint 1 y la propuesta del equipo se resumirán aquí cuando se validen sus fuentes: `[PENDIENTE: fechas, actividades y evidencia verificables; anonimizar información de personas]`.
+En las sesiones de trabajo del Sprint 1 se registraron entrevistas anonimizadas con compradores y artesanas de la Mixteca. El consolidado público ([Hito 1.3](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/ux-testing/HITO_1.3_VALIDACION_COMPRADORES.md)) reporta 14 participantes (11 compradores o consumidores y 3 estudiantes) y un SUS de 55. Con esa evidencia, la propuesta final define el módulo de atestaciones (#140).
 
-## Propósito de colaboración
-
-`[PENDIENTE: una oración acordada, legal, alcanzable y coherente con la Propuesta Final y con las necesidades confirmadas de la organización]`.
+**Propósito:** acordar la entrega de una especificación determinista de atestaciones, cinco esquemas sin datos personales y seis vectores de prueba, para que la organización pueda revisar el origen de sus productos sin exponer a las personas de la comunidad.
 
 ## Compromisos del equipo
 
-Los compromisos definitivos se copiarán del cronograma de la Propuesta Final aprobada. No se adquieren compromisos por el solo hecho de aparecer en este borrador.
+| Compromiso verificable | Fecha | Responsable |
+| --- | --- | --- |
+| Entregar `ATTESTATION_SPEC.md` y los 5 manifiestos de esquema | 2026-11-24 | @DiegoSosa-05 |
+| Entregar `ids.ts`, los 6 vectores y sus pruebas | 2026-12-01 | @Felix-Angel |
+| Reportar avance semanal con datos del tablero y semáforo | 2026-11-23 y cada lunes | @al3-dan |
+| Entregar la carta leída y con minuta de la sesión | 2026-12-01 | @LuisAlexisMorales |
 
-| Entregable verificable | Fecha acordada | Responsable (`@usuario`/rol) | Forma de verificación |
-|---|---|---|---|
-| `[PENDIENTE: compromiso tomado de propuesta aprobada]` | `[PENDIENTE]` | `[PENDIENTE]` | `[PENDIENTE]` |
+Estos compromisos se copian del cronograma de la propuesta final y no prometen más de lo que el equipo puede entregar.
 
 ## Compromisos de la organización
 
-Los compromisos deben ser voluntarios, realistas, acordados y sin costo para la organización. Posibles categorías a confirmar —no son compromisos aceptados—: tiempo para pruebas, información necesaria o espacio para una actividad.
+| Compromiso | Fecha | Responsable |
+| --- | --- | --- |
+| Disponer de [TIEMPO_DE_PRUEBA] para probar la demo de lectura de atestaciones | [FECHA_PRUEBA] | [ROL_DE_LA_ORGANIZACIÓN] |
+| Proporcionar la información pública necesaria (municipio y tipo de producto), sin datos personales | [FECHA_INFORMACION] | [ROL_DE_LA_ORGANIZACIÓN] |
+| Facilitar un espacio para la lectura de la carta y la asamblea | [FECHA_ASAMBLEA] | [ROL_DE_LA_ORGANIZACIÓN] |
 
-| Apoyo acordado | Fecha/periodo | Responsable por rol | Confirmación |
-|---|---|---|---|
-| `[PENDIENTE DE CONFIRMAR; no asumir disponibilidad]` | `[PENDIENTE]` | `[PENDIENTE: rol]` | `[PENDIENTE: registrar solo tras acuerdo]` |
-
-## Cronograma
-
-| Hito/entregable | Fecha | Evidencia | Responsable |
-|---|---|---|---|
-| `[PENDIENTE: sincronizar con cronograma de propuesta]` | `[PENDIENTE]` | `[PENDIENTE]` | `[PENDIENTE]` |
+Todos los compromisos son **sin costo para la organización**. No se le pide dinero, equipo ni conexión permanente.
 
 ## Alcance y exclusiones
 
-La colaboración descrita en esta carta **no tiene costo para la organización**. La propuesta aún no cuenta con presupuesto total confirmado; ese presupuesto del equipo no modifica la condición de costo cero para la organización. Esta condición y el alcance deben revisarse con las partes antes de firmar: `[PENDIENTE DE CONFIRMAR]`.
+Queda escrito que este trabajo:
 
-Yucu es un prototipo en una red de pruebas (Stellar testnet). No garantiza ventas ni ingresos y no otorga certificaciones. Ninguna persona del equipo custodia las claves ni el dinero de la organización. El alcance técnico y las exclusiones adicionales deben coincidir con la propuesta final aprobada: `[PENDIENTE DE CONFIRMAR]`.
+- es **sin costo** y no genera cobro, comisión ni cuota;
+- **no garantiza ventas ni ingresos**;
+- **no otorga certificaciones**;
+- Yucu es un **prototipo** en la red de prueba de Stellar, no un servicio desplegado para uso público;
+- nadie de Yucu ni del equipo guarda las llaves ni el dinero de la organización; cada transacción se firma en el dispositivo de la persona correspondiente.
 
-Esta carta es de buena fe y no crea obligaciones legales ni financieras. La revisión académica/formativa no sustituye la revisión legal del campus. El original en papel y cualquier documento privado de representación se gestionan conforme a las indicaciones del docente, fuera del repositorio.
+## Datos personales
 
-## Privacidad y protección de datos
+Solo se usarán el rol de la persona (por ejemplo, “la presidenta del comité”) y el código de municipio, con el fin de explicar el origen del producto y probar la demo. No se pedirán nombres, teléfonos, CURP, números de control, fotos ni grabaciones. La información sensible se representa con un hash con sal y se guarda en la cadena como una dirección o un código, nunca como nombre. Se aplica el [aviso de privacidad](https://github.com/Open-Hub-Tec/yucu-protocol/blob/main/docs/research/PRIVACIDAD.md) y se pide consentimiento libre e informado antes de cualquier entrevista; la persona puede negarse sin consecuencias.
 
-No se ha confirmado qué datos personales serían necesarios. Antes de cualquier tratamiento se debe especificar el tipo de dato, propósito, quién tendrá acceso, medio de resguardo y periodo de conservación: `[PENDIENTE DE CONFIRMAR]`. Se aplicará el aviso `docs/research/PRIVACIDAD.md`. No se publicarán nombres de personas de la comunidad, teléfonos, identificaciones, firmas, fotografías, voces ni audios. La evidencia pública se limitará a resúmenes anonimizados y necesarios.
+## Propiedad intelectual e imagen
 
-## Consentimiento informado
+El código de Yucu se distribuye bajo licencia **MIT**. Los diseños, recetas, fotografías y conocimientos tradicionales siguen siendo propiedad de la organización. El nombre y las imágenes de la organización solo se usarán para mencionar su participación en el prototipo y en la Feria de Integración, previa autorización; no se usarán con fines comerciales ni para sugerir respaldo a productos externos.
 
-Antes de solicitar o tratar datos personales, imágenes, voz o conocimiento tradicional se explicará en lenguaje claro qué se solicita, para qué se usará, quién tendrá acceso, dónde se conservará y cómo retirar el consentimiento. La participación será voluntaria y el consentimiento no se presumirá por asistir a una reunión o entrevista. Forma, alcance y registro privado del consentimiento: `[PENDIENTE DE CONFIRMAR con la organización; no se afirma que ya fue otorgado]`.
+## Comunicación, vigencia y terminación
 
-## Propiedad intelectual
+- **Contacto del equipo:** @LuisAlexisMorales. **Contacto de la organización:** [ROL_DE_LA_ORGANIZACIÓN].
+- **Vigencia:** del 2026-11-20 al 2027-06-30.
+- **Terminación:** cualquiera de las partes puede darla por terminada con aviso por escrito con [DIAS_DE_AVISO] días naturales de anticipación.
+- **Diferencias:** se resuelven primero con diálogo y, si hace falta, en asamblea, con minuta de los acuerdos.
 
-El código de Yucu Protocol está bajo licencia MIT, según el Manual del contribuidor y sujeto a cotejo con la licencia vigente del repositorio. Para esta colaboración, diseños, recetas, fotografías y conocimientos tradicionales se reconocerán como propiedad de la organización o sus titulares; confirmar esta redacción con la organización antes de firmar. El uso de esos materiales requiere autorización y alcance definidos: `[PENDIENTE: materiales, finalidad, canal y vigencia]`.
+## Consentimiento informado y firma
 
-## Uso de imágenes y conocimientos tradicionales
+La carta se leyó en lenguaje sencillo [Y_EN_SU_LENGUA_SI_APLICA], se dejó tiempo para consultarla en asamblea y se levantó minuta de esa sesión. La firma original y el documento que acredita la representación se guardan fuera del repositorio; aquí solo queda el estado y, cuando corresponda, la huella SHA-256 del PDF firmado.
 
-No se capturarán ni publicarán imágenes, nombres o conocimientos tradicionales sin consentimiento libre, informado y específico. Usos autorizados, finalidad, duración y mecanismo para retirar autorización: `[PENDIENTE DE ACUERDO]`. La ausencia de respuesta no equivale a consentimiento. Mientras no exista autorización, no se contempla publicar imágenes ni conocimientos tradicionales identificables.
+**Estado: borrador**
 
-## Comunicación
-
-- Contacto del equipo por rol: `[PENDIENTE DE CONFIRMAR]`.
-- Contacto de la organización por rol: `[PENDIENTE DE CONFIRMAR]`.
-- Canales, idioma, horarios y alternativa sin conectividad: `[PENDIENTE DE ACORDAR]`.
-
-## Vigencia y terminación
-
-La vigencia comenzaría el `[PENDIENTE: fecha acordada]` y concluiría el `[PENDIENTE: fecha acordada]`, salvo terminación anticipada mediante aviso escrito. Las diferencias se atenderán mediante diálogo y, cuando corresponda, asamblea. Canal y roles para el aviso: `[PENDIENTE DE CONFIRMAR]`.
-
-## Lectura, consulta y constancia
-
-Para la versión final, confirmar que el texto fue leído a la organización y registrar la sesión en una minuta dentro de `docs/gestion/equipo-2/minutas/`, sin datos personales públicos. El original firmado y la prueba privada de representación no se subirán al repositorio. No se adjuntarán escaneos, fotos de firmas ni identificaciones.
-
-Estado: borrador
+Próxima fecha de asamblea: [FECHA_ASAMBLEA].
